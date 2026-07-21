@@ -1,0 +1,421 @@
+{
+  "base_url": "https://devprimevat.ibos.io",
+  "Client Integration": {
+    "url": "https://devprimevat.ibos.io/client-integration",
+    "links": [
+      {
+        "text": "CLIENT INTEGRATION",
+        "href": "/client-integration"
+      }
+    ]
+  },
+  "Configuration": {
+    "url": "https://devprimevat.ibos.io/configuration",
+    "links": [
+      {
+        "text": "CONFIGURATION",
+        "href": "/configuration"
+      },
+      {
+        "text": "Business Config",
+        "href": "/configuration/businessConfig"
+      },
+      {
+        "text": "Branch",
+        "href": "/configuration/businessConfig/branch"
+      },
+      {
+        "text": "Tax Config",
+        "href": "/configuration/businessConfig/taxConfig"
+      },
+      {
+        "text": "Item Config",
+        "href": "/configuration/itemConfig"
+      },
+      {
+        "text": "Item",
+        "href": "/configuration/itemConfig/item"
+      },
+      {
+        "text": "Item Category",
+        "href": "/configuration/itemConfig/itemCategory"
+      },
+      {
+        "text": "Price Declaration",
+        "href": "/configuration/itemConfig/priceDeclaration"
+      },
+      {
+        "text": "Tafsil",
+        "href": "/configuration/itemConfig/tafsil"
+      },
+      {
+        "text": "Tarrif Schedule",
+        "href": "/configuration/itemConfig/tarrifSchedule"
+      },
+      {
+        "text": "Unit Of Measure",
+        "href": "/configuration/itemConfig/unitOfMeasure"
+      },
+      {
+        "text": "Customer/Supplier Config",
+        "href": "/configuration/partnerConfig"
+      },
+      {
+        "text": "Customer/Supplier",
+        "href": "/configuration/partnerConfig/partner"
+      },
+      {
+        "text": "User Management",
+        "href": "/configuration/roleManagement"
+      },
+      {
+        "text": "Change Password",
+        "href": "/configuration/roleManagement/changePassword"
+      },
+      {
+        "text": "Create User",
+        "href": "/configuration/roleManagement/createUser"
+      },
+      {
+        "text": "Role Assignment",
+        "href": "/configuration/roleManagement/roleAssignment"
+      },
+      {
+        "text": "User Role Extension",
+        "href": "/configuration/roleManagement/roleExtension"
+      },
+      {
+        "text": "Vehicle Management",
+        "href": "/configuration/vehicleManagement"
+      },
+      {
+        "text": "Vehicle",
+        "href": "/configuration/vehicleManagement/vehicle"
+      }
+    ]
+  },
+  "Operation": {
+    "url": "https://devprimevat.ibos.io/operation",
+    "links": [
+      {
+        "text": "OPERATION",
+        "href": "/operation"
+      },
+      {
+        "text": "Inventory Transaction",
+        "href": "/operation/inventoryTransaction"
+      },
+      {
+        "text": "Item Destroy",
+        "href": "/operation/inventoryTransaction/itemDestroy"
+      },
+      {
+        "text": "Transfer In",
+        "href": "/operation/inventoryTransaction/transferIn"
+      },
+      {
+        "text": "Transfer Out",
+        "href": "/operation/inventoryTransaction/transferOut"
+      },
+      {
+        "text": "Manufacturing",
+        "href": "/operation/manufacturing"
+      },
+      {
+        "text": "Contract Manufacturing Receive",
+        "href": "/operation/manufacturing/contactMFGReceive"
+      },
+      {
+        "text": "Contract Manufacturing Issue",
+        "href": "/operation/manufacturing/contactManufacturing"
+      },
+      {
+        "text": "Production",
+        "href": "/operation/manufacturing/production"
+      },
+      {
+        "text": "Purchase",
+        "href": "/operation/purchase"
+      },
+      {
+        "text": "Debit Note",
+        "href": "/operation/purchase/debit-note"
+      },
+      {
+        "text": "Purchase",
+        "href": "/operation/purchase/purchase"
+      },
+      {
+        "text": "Sales",
+        "href": "/operation/sales"
+      },
+      {
+        "text": "Credit Note",
+        "href": "/operation/sales/credit-note"
+      },
+      {
+        "text": "Sales Invoice",
+        "href": "/operation/sales/salesInvoice"
+      },
+      {
+        "text": "Wastage Management",
+        "href": "/operation/wastageManagement"
+      },
+      {
+        "text": "Price Declaration Wastage",
+        "href": "/operation/wastageManagement/priceDeclarationWastage"
+      },
+      {
+        "text": "Wastage In",
+        "href": "/operation/wastageManagement/wastageIn"
+      },
+      {
+        "text": "Wastage Sales",
+        "href": "/operation/wastageManagement/wastageSalesInvoice"
+      }
+    ]
+  },
+  "Reports": {
+    "url": "https://devprimevat.ibos.io/reports",
+    "links": [
+      {
+        "text": "REPORTS",
+        "href": "/reports"
+      },
+      {
+        "text": "Mushak Forms",
+        "href": "/reports/mushakForms"
+      },
+      {
+        "text": "Mushak 4.3 (Price Declaration)",
+        "href": "/reports/mushakForms/mushak4.3"
+      },
+      {
+        "text": "Mushak 4.4 (Item Destroy)",
+        "href": "/reports/mushakForms/mushak4.4"
+      },
+      {
+        "text": "Mushak 4.5 (Accident Destroy)",
+        "href": "/reports/mushakForms/mushak4.5"
+      },
+      {
+        "text": "Mushak 4.6 (Waste Disposal)",
+        "href": "/reports/mushakForms/mushak4.6"
+      },
+      {
+        "text": "Mushak 6.2.1 (P&S Register)",
+        "href": "/reports/mushakForms/mushak6-2-1"
+      },
+      {
+        "text": "Mushak 6.1 (Purchase Register)",
+        "href": "/reports/mushakForms/mushak6.1"
+      },
+      {
+        "text": "Mushak 6.10  (P&S +2 Lakh)",
+        "href": "/reports/mushakForms/mushak6.10"
+      },
+      {
+        "text": "Mushak 6.2 (Sales Register)",
+        "href": "/reports/mushakForms/mushak6.2"
+      },
+      {
+        "text": "Mushak 6.3 (Sales Invoice\r\n)",
+        "href": "/reports/mushakForms/mushak6.3"
+      },
+      {
+        "text": "Mushak 6.4 (Issue MFG.)",
+        "href": "/reports/mushakForms/mushak6.4"
+      },
+      {
+        "text": "Mushak 6.5 (Stock Transfer)",
+        "href": "/reports/mushakForms/mushak6.5"
+      },
+      {
+        "text": "Mushak 6.6 (VDS Certificate)",
+        "href": "/reports/mushakForms/mushak6.6"
+      },
+      {
+        "text": "Mushak 6.7 (Credit Note)",
+        "href": "/reports/mushakForms/mushak6.7"
+      },
+      {
+        "text": "Mushak 6.8 (Debit Note)",
+        "href": "/reports/mushakForms/mushak6.8"
+      },
+      {
+        "text": "Mushak 9.1 (VAT Return)",
+        "href": "/reports/mushakForms/mushak9.1"
+      },
+      {
+        "text": "MIS Report",
+        "href": "/reports/otherReports"
+      },
+      {
+        "text": "Sales & Stock Summary",
+        "href": "/reports/otherReports/SalesStockSummary"
+      },
+      {
+        "text": "Transaction Log",
+        "href": "/reports/otherReports/auditLog"
+      },
+      {
+        "text": "Audit Report",
+        "href": "/reports/otherReports/auditReport"
+      },
+      {
+        "text": "Chok Ka/Kha",
+        "href": "/reports/otherReports/chok-ka/kha"
+      },
+      {
+        "text": "Credit Note Report",
+        "href": "/reports/otherReports/creditNoteReport"
+      },
+      {
+        "text": "Debit Note Report",
+        "href": "/reports/otherReports/debitNoteReport"
+      },
+      {
+        "text": "Doc Verification System (DVS)",
+        "href": "/reports/otherReports/docVerificationSystem(DVS)"
+      },
+      {
+        "text": "HSCode Wise Sales & Vat",
+        "href": "/reports/otherReports/hsCodeVatSummary"
+      },
+      {
+        "text": "Inventory Reconciliation",
+        "href": "/reports/otherReports/inventoryReport"
+      },
+      {
+        "text": "Material Issue Report",
+        "href": "/reports/otherReports/materialIssueReport"
+      },
+      {
+        "text": "Partner Vs Stock",
+        "href": "/reports/otherReports/partnerVsStock"
+      },
+      {
+        "text": "Payment Method Wise Report",
+        "href": "/reports/otherReports/paymentMethodWiseReport"
+      },
+      {
+        "text": "Production Report",
+        "href": "/reports/otherReports/productionReport"
+      },
+      {
+        "text": "Purchase Report",
+        "href": "/reports/otherReports/purchaseReport"
+      },
+      {
+        "text": "Purchase Report by Category",
+        "href": "/reports/otherReports/purchaseReportByCategory"
+      },
+      {
+        "text": "Purchase/Sales Details",
+        "href": "/reports/otherReports/purchaseSalesDetails"
+      },
+      {
+        "text": "Sales & Purchase Compare",
+        "href": "/reports/otherReports/salesAndPurchaseCompare"
+      },
+      {
+        "text": "Sales Report",
+        "href": "/reports/otherReports/salesReport"
+      },
+      {
+        "text": "Sales Report by Category",
+        "href": "/reports/otherReports/salesReportByCategory"
+      },
+      {
+        "text": "Sales Summary Report",
+        "href": "/reports/otherReports/salesSummaryReport"
+      },
+      {
+        "text": "Stock Reconsile Report",
+        "href": "/reports/otherReports/stockReconsileReport"
+      },
+      {
+        "text": "Stock Register",
+        "href": "/reports/otherReports/stockRegister"
+      },
+      {
+        "text": "Transit Report",
+        "href": "/reports/otherReports/transitReport"
+      },
+      {
+        "text": "Treasury Deposit Report",
+        "href": "/reports/otherReports/treasuryDepositReport"
+      }
+    ]
+  },
+  "Tax Accounting": {
+    "url": "https://devprimevat.ibos.io/tax-accounting",
+    "links": [
+      {
+        "text": "TAX ACCOUNTING",
+        "href": "/tax-accounting"
+      },
+      {
+        "text": "Financials",
+        "href": "/tax-accounting/financials"
+      },
+      {
+        "text": "Adjustment Journal",
+        "href": "/tax-accounting/financials/adjustmentjournal"
+      },
+      {
+        "text": "Bank Journal",
+        "href": "/tax-accounting/financials/bankjournal"
+      },
+      {
+        "text": "Cash Journal",
+        "href": "/tax-accounting/financials/cashjournal"
+      }
+    ]
+  },
+  "Transaction": {
+    "url": "https://devprimevat.ibos.io/transaction",
+    "links": [
+      {
+        "text": "TRANSACTION",
+        "href": "/transaction"
+      },
+      {
+        "text": "Adjustment",
+        "href": "/transaction/adjustment"
+      },
+      {
+        "text": "Credit Note Adjustment",
+        "href": "/transaction/adjustment/creditNoteAdjustment"
+      },
+      {
+        "text": "Debit Note Adjustment",
+        "href": "/transaction/adjustment/debitNoteAdjustment"
+      },
+      {
+        "text": "Other Adjustment",
+        "href": "/transaction/adjustment/otherAdjustment"
+      },
+      {
+        "text": "VDS Adjustment",
+        "href": "/transaction/adjustment/vdsAdjustment"
+      },
+      {
+        "text": "Treasury And Others",
+        "href": "/transaction/treasuryAndOthers"
+      },
+      {
+        "text": "Treasury Deposit",
+        "href": "/transaction/treasuryAndOthers/treasuryDeposit"
+      },
+      {
+        "text": "Turnover Tax",
+        "href": "/transaction/treasuryAndOthers/turnoverTax"
+      },
+      {
+        "text": "VDS Certificate (Issue)",
+        "href": "/transaction/treasuryAndOthers/varDeductatSource"
+      }
+    ]
+  }
+}

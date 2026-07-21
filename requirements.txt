@@ -1,0 +1,10 @@
+google-genai
+pillow
+playwright
+markdown-it-py
+python-dotenv
+pypdf
+docling
+pixelrag[pdf]
+chromadb
+langchain-text-splitters

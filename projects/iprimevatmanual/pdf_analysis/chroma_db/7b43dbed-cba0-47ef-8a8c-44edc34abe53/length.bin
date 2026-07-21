@@ -1,0 +1,15 @@
+Module: Transaction
+Page: VAT Deduct at Source (VDS Certificate)
+Task: View VDS Certificates
+Action: filter
+Roles: 
+Keywords: VDS, Certificate, VAT, deduct at source, treasury
+
+**Purpose:** To list VDS certificates based on status and date range.
+
+**Required roles:**
+* No role restriction was identified
+
+**Prerequisites:**
+* User must be logged in.
+* Must have access to the Treasury And Others sub
