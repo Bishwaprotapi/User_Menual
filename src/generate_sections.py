@@ -4,6 +4,7 @@ import argparse
 import json
 import os
 import re
+import sys
 import time
 from pathlib import Path
 
@@ -11,6 +12,11 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import errors, types
 from PIL import Image
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+import build_pdf
+import debug_logger
 
 DEFAULT_MODEL = (
     "gemini-3.1-flash-lite"
@@ -935,6 +941,10 @@ def run(
 ) -> None:
     load_dotenv()
 
+    logger = debug_logger.get_logger(
+        project_dir
+    )
+
     model = os.getenv(
         "GEMINI_MODEL",
         DEFAULT_MODEL,
@@ -944,6 +954,10 @@ def run(
 
     print(
         f"Using Gemini model: {model}"
+    )
+
+    logger.info(
+        f"Section generation started using {model}"
     )
 
     screenshots_root = (
@@ -961,16 +975,6 @@ def run(
 
     all_evidence = load_evidence(
         project_dir
-    )
-
-    sections_dir = (
-        project_dir
-        / "manual_sections"
-    )
-
-    sections_dir.mkdir(
-        parents=True,
-        exist_ok=True,
     )
 
     module_dirs = sorted(
@@ -1005,9 +1009,21 @@ def run(
             ).title()
         )
 
+        module_slug = slug(
+            module_name
+        )
+
+        module_sections_dir = (
+            module_dir / "manual_sections"
+        )
+
+        module_pdf_dir = (
+            module_dir / "pdf_analysis"
+        )
+
         section_path = (
-            sections_dir
-            / f"{slug(module_name)}.md"
+            module_sections_dir
+            / f"{module_slug}.md"
         )
 
         if not force and section_path.is_file():
@@ -1024,28 +1040,82 @@ def run(
                 f"Generating module: {module_name}"
             )
 
-            content = generate_module(
-                client,
-                model,
-                module_name,
-                module_dir,
-                software_name,
-                purpose,
-                audience,
-                all_evidence,
-            )
+            try:
+                content = generate_module(
+                    client,
+                    model,
+                    module_name,
+                    module_dir,
+                    software_name,
+                    purpose,
+                    audience,
+                    all_evidence,
+                )
+
+            except Exception as exc:
+                debug_logger.log_exception(
+                    project_dir,
+                    exc,
+                    context=f"generate_module {module_name}",
+                )
+
+                raise
 
             if not content:
                 print(
                     f"  SKIP {module_name}: no screenshots"
                 )
 
+                logger.info(
+                    f"SKIP {module_name}: no screenshots"
+                )
+
                 continue
+
+            module_sections_dir.mkdir(
+                parents=True,
+                exist_ok=True,
+            )
 
             section_path.write_text(
                 content,
                 encoding="utf-8",
             )
+
+            logger.info(
+                f"Wrote module section: {section_path}"
+            )
+
+        module_pdf_path = (
+            module_pdf_dir
+            / f"{module_slug}.pdf"
+        )
+
+        if force or not module_pdf_path.is_file():
+            module_html_path = (
+                module_pdf_dir
+                / f"{module_slug}.html"
+            )
+
+            try:
+                build_pdf.render_pdf(
+                    section_path,
+                    module_pdf_path,
+                    module_html_path,
+                    project_dir,
+                    subtitle=f"{module_name} module reference",
+                )
+
+                logger.info(
+                    f"Wrote module PDF: {module_pdf_path}"
+                )
+
+            except Exception as exc:
+                debug_logger.log_exception(
+                    project_dir,
+                    exc,
+                    context=f"render module pdf {module_name}",
+                )
 
         section_number += 1
 
@@ -1057,9 +1127,18 @@ def run(
             )
         )
 
+    overall_sections_dir = (
+        project_dir / "manual_sections"
+    )
+
+    overall_sections_dir.mkdir(
+        parents=True,
+        exist_ok=True,
+    )
+
     manual_path = (
-        project_dir
-        / "manual.md"
+        overall_sections_dir
+        / "overall.md"
     )
 
     manual_path.write_text(
@@ -1074,6 +1153,10 @@ def run(
             "Wrote task structured manual: "
             f"{manual_path}"
         )
+    )
+
+    logger.info(
+        f"Wrote overall manual: {manual_path}"
     )
 
 

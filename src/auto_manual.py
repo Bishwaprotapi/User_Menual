@@ -249,11 +249,19 @@ def cmd_all(args) -> None:
         )
 
     print(
-        f"Manual Markdown: {project_dir / 'manual.md'}"
+        f"Overall manual Markdown: {project_dir / 'manual_sections' / 'overall.md'}"
     )
 
     print(
-        f"Manual PDF: {project_dir / 'manual.pdf'}"
+        f"Overall manual PDF: {project_dir / 'pdf_analysis' / 'overall.pdf'}"
+    )
+
+    print(
+        f"Per-menu sections and PDFs: {project_dir / 'screenshots' / '<module>' / '(manual_sections|pdf_analysis)'}"
+    )
+
+    print(
+        f"Debug logs: {project_dir / 'debug'}"
     )
 
 

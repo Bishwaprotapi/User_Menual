@@ -8,10 +8,16 @@ Create, Edit, View, Show, and Details interfaces when they are available.
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 from urllib.parse import urljoin
 
 from playwright.sync_api import Page, sync_playwright
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+import cursor_overlay
+import debug_logger
 
 CREATE_RE = re.compile(
     r"create|add new|new record|new item|add employee|register",
@@ -459,6 +465,7 @@ def capture_state(
     folder: Path,
     page_slug: str,
     state_name: str,
+    cursor_point: tuple[float, float] | None = None,
 ) -> dict:
     if state_name == "screen":
         screenshot_name = (
@@ -474,11 +481,22 @@ def capture_state(
         folder / screenshot_name
     )
 
+    point = (
+        cursor_point
+        or cursor_overlay.default_point(page)
+    )
+
+    cursor_overlay.show(
+        page, *point
+    )
+
     page.screenshot(
         path=str(screenshot_path),
         full_page=True,
         timeout=20000,
     )
+
+    cursor_overlay.hide(page)
 
     return {
         "state": state_name,
@@ -497,6 +515,10 @@ def capture_action(
     click_locator,
 ) -> dict | None:
     original_url = page.url
+
+    click_point = cursor_overlay.locator_center(
+        click_locator
+    )
 
     if not safe_click(
         click_locator
@@ -522,6 +544,7 @@ def capture_action(
             folder,
             page_slug,
             state_name,
+            cursor_point=click_point,
         )
 
     except Exception:
@@ -621,12 +644,51 @@ def find_action_locator(
     return None
 
 
+def find_nav_locator(
+    page: Page,
+    href: str,
+    text: str,
+):
+    """Locate the sidebar/nav link for a discovered entry on the current page."""
+    if href:
+        try:
+            candidate = page.locator(
+                f'a[href="{href}"]'
+            ).first
+
+            if candidate.is_visible(
+                timeout=600
+            ):
+                return candidate
+
+        except Exception:
+            pass
+
+    if text:
+        try:
+            candidate = page.get_by_text(
+                text,
+                exact=True,
+            ).first
+
+            if candidate.is_visible(
+                timeout=600
+            ):
+                return candidate
+
+        except Exception:
+            pass
+
+    return None
+
+
 def crawl_module(
     page: Page,
     base: str,
     module: str,
     entries: list,
     output_root: Path,
+    project_dir: Path,
 ) -> list[dict]:
     folder = (
         output_root / slug(module)
@@ -671,10 +733,50 @@ def crawl_module(
         }
 
         try:
-            page.goto(
-                url,
-                timeout=30000,
+            nav_locator = find_nav_locator(
+                page,
+                href,
+                text,
             )
+
+            nav_point = (
+                cursor_overlay.locator_center(
+                    nav_locator
+                )
+                if nav_locator is not None
+                else None
+            )
+
+            clicked = False
+
+            if (
+                nav_locator is not None
+                and nav_point is not None
+            ):
+                try:
+                    cursor_overlay.show(
+                        page,
+                        *nav_point,
+                    )
+
+                    page.wait_for_timeout(
+                        250
+                    )
+
+                    nav_locator.click(
+                        timeout=5000
+                    )
+
+                    clicked = True
+
+                except Exception:
+                    clicked = False
+
+            if not clicked:
+                page.goto(
+                    url,
+                    timeout=30000,
+                )
 
             try:
                 page.wait_for_load_state(
@@ -689,12 +791,27 @@ def crawl_module(
                 1200
             )
 
+            # Prefer the same nav link re-located on the landed page
+            # (commonly marked "active" there) so the cursor still
+            # points at what the user navigated through.
+            landed_point = (
+                cursor_overlay.locator_center(
+                    find_nav_locator(
+                        page,
+                        href,
+                        text,
+                    )
+                )
+                or nav_point
+            )
+
             record["states"].append(
                 capture_state(
                     page,
                     folder,
                     page_slug,
                     "screen",
+                    cursor_point=landed_point,
                 )
             )
 
@@ -707,6 +824,12 @@ def crawl_module(
 
             page_records.append(
                 record
+            )
+
+            debug_logger.log_exception(
+                project_dir,
+                exc,
+                context=f"crawl {module}/{page_slug}",
             )
 
             print(
@@ -756,6 +879,14 @@ def run(
     project_dir: Path,
     modules=None,
 ) -> None:
+    logger = debug_logger.get_logger(
+        project_dir
+    )
+
+    logger.info(
+        "Crawl started"
+    )
+
     discovery_path = (
         project_dir
         / "discovery.json"
@@ -819,6 +950,10 @@ def run(
 
         page = context.new_page()
 
+        debug_logger.attach_browser_logging(
+            page, project_dir
+        )
+
         for module in selected_modules:
             entries = discovery.get(
                 module,
@@ -833,7 +968,15 @@ def run(
                     f"SKIP {module}: no pages"
                 )
 
+                logger.info(
+                    f"SKIP {module}: no pages"
+                )
+
                 continue
+
+            logger.info(
+                f"Crawling module: {module} ({len(entries)} pages)"
+            )
 
             complete_evidence[
                 "modules"
@@ -843,6 +986,7 @@ def run(
                 module,
                 entries,
                 output_root,
+                project_dir,
             )
 
         context.close()
@@ -864,6 +1008,10 @@ def run(
 
     print(
         f"Wrote UI evidence: {evidence_path}"
+    )
+
+    logger.info(
+        f"Crawl finished; wrote {evidence_path}"
     )
 
 
@@ -901,3 +1049,12 @@ if __name__ == "__main__":
         )
 
         raise SystemExit(1)
+
+    except Exception as exc:
+        debug_logger.log_exception(
+            Path(sys.argv[1]) if len(sys.argv) > 1 else Path("."),
+            exc,
+            context="crawl_engine.main",
+        )
+
+        raise

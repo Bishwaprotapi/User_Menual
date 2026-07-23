@@ -1,0 +1,684 @@
+<!doctype html><html><head><meta charset="utf-8">
+<base href="file:///D:/User_Menual/projects/iprimevatmanual/">
+<title>User Manual</title><style>
+body { font-family: -apple-system, Segoe UI, Arial, sans-serif; color: #1f2430; line-height: 1.5; }
+.cover { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; page-break-after: always; }
+.cover h1 { font-size: 40px; margin-bottom: 8px; }
+.cover p { color: #667; }
+nav.toc { page-break-after: always; }
+nav.toc h2 { font-size: 22px; }
+nav.toc ul { list-style: none; padding-left: 0; }
+nav.toc li { margin: 6px 0; }
+nav.toc a { color: #1a4fd6; text-decoration: none; }
+h2 { font-size: 24px; border-bottom: 2px solid #ddd; padding-bottom: 6px; margin-top: 40px; page-break-before: always; }
+h3 { font-size: 19px; color: #17305a; margin-top: 30px; }
+h4 { font-size: 17px; color: #17305a; margin-top: 28px; }
+img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; margin: 10px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 13px; }
+code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+</style></head><body>
+<div class="cover"><h1>User Manual</h1><p>Operation module reference</p></div>
+<nav class="toc"><h2>Table of Contents</h2><ul></ul></nav>
+<h3>Page: Contract Manufacturing Issue</h3>
+<p><img src="screenshots/operation/contract_manufacturing_issue.png" alt="Contract Manufacturing Issue: Screen" /></p>
+<p><img src="screenshots/operation/contract_manufacturing_issue_show.png" alt="Contract Manufacturing Issue: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view and manage raw materials issued for contract manufacturing processes.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/contactManufacturing</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Contract Manufacturing Issue", "task": "View Contract Manufacturing Issues", "action": "view", "roles": [], "route": "/operation/manufacturing/contactManufacturing", "screenshots": ["screenshots/operation/contract_manufacturing_issue.png", "screenshots/operation/contract_manufacturing_issue_show.png"], "keywords": ["manufacturing", "issue", "raw material", "contract"], "task_order": 1} -->
+<h4>Task: View Contract Manufacturing Issues</h4>
+<p><strong>Purpose:</strong> To list contract manufacturing issue records for a specific date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Manufacturing module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Contract Manufacturing Issue</li>
+<li>Select the Branch from the dropdown</li>
+<li>Select the 'From Date'</li>
+<li>Select the 'To Date'</li>
+<li>Select the Issue Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the relevant branch office.</li>
+<li><strong>From Date:</strong> Starting date for the record search.</li>
+<li><strong>To Date:</strong> Ending date for the record search.</li>
+<li><strong>Issue Type:</strong> Type of manufacturing issue (e.g., Issue Raw Material).</li>
+</ul>
+<p><strong>Expected result:</strong> A table displaying records matching the specified filter criteria appears.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> manufacturing, issue, raw material, contract</p>
+<h3>Page: Contract Manufacturing Receive</h3>
+<p><img src="screenshots/operation/contract_manufacturing_receive.png" alt="Contract Manufacturing Receive: Screen" /></p>
+<p><img src="screenshots/operation/contract_manufacturing_receive_show.png" alt="Contract Manufacturing Receive: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to manage the receipt of raw materials back from contract manufacturing.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/contactMFGReceive</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Contract Manufacturing Receive", "task": "View Contract Manufacturing Receipts", "action": "view", "roles": [], "route": "/operation/manufacturing/contactMFGReceive", "screenshots": ["screenshots/operation/contract_manufacturing_receive.png", "screenshots/operation/contract_manufacturing_receive_show.png"], "keywords": ["receive", "raw material", "manufacturing", "receipt"], "task_order": 1} -->
+<h4>Task: View Contract Manufacturing Receipts</h4>
+<p><strong>Purpose:</strong> To view records of raw materials received from contract manufacturing.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Manufacturing module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Contract Manufacturing Receive</li>
+<li>Select the Branch</li>
+<li>Define the date range using 'From Date' and 'To Date'</li>
+<li>Select the Receive Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> The branch associated with the receipt.</li>
+<li><strong>From Date:</strong> Beginning of the date range.</li>
+<li><strong>To Date:</strong> End of the date range.</li>
+<li><strong>Receive Type:</strong> The category of receipt (e.g., Receive Raw Material).</li>
+</ul>
+<p><strong>Expected result:</strong> A list of receipt transactions is displayed in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> receive, raw material, manufacturing, receipt</p>
+<h3>Page: Credit Note</h3>
+<p><img src="screenshots/operation/credit_note.png" alt="Credit Note: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and search for sales credit notes.</p>
+<p><strong>Route:</strong> <code>/operation/sales/credit-note</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Credit Note", "task": "Search Credit Notes", "action": "search", "roles": [], "route": "/operation/sales/credit-note", "screenshots": ["screenshots/operation/credit_note.png"], "keywords": ["credit note", "sales", "invoice"], "task_order": 1} -->
+<h4>Task: Search Credit Notes</h4>
+<p><strong>Purpose:</strong> To filter and locate specific credit notes issued to customers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Sales module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Sales &gt; Credit Note</li>
+<li>Select the Branch</li>
+<li>Set the 'Form Date' and 'To Date'</li>
+<li>Enter a value in the 'Sales Invoice Search' field</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the branch for the credit note.</li>
+<li><strong>Form Date:</strong> Start date for the search.</li>
+<li><strong>To Date:</strong> End date for the search.</li>
+<li><strong>Sales Invoice Search:</strong> Keyword search for specific sales invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> Credit note records matching the search criteria are displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> credit note, sales, invoice</p>
+<h3>Page: Debit Note</h3>
+<p><img src="screenshots/operation/debit_note.png" alt="Debit Note: Screen" /></p>
+<p><img src="screenshots/operation/debit_note_show.png" alt="Debit Note: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view and search for purchase-related debit notes.</p>
+<p><strong>Route:</strong> <code>/operation/purchase/debit-note</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Debit Note", "task": "View Debit Notes", "action": "view", "roles": [], "route": "/operation/purchase/debit-note", "screenshots": ["screenshots/operation/debit_note.png", "screenshots/operation/debit_note_show.png"], "keywords": ["debit note", "purchase", "invoice"], "task_order": 1} -->
+<h4>Task: View Debit Notes</h4>
+<p><strong>Purpose:</strong> To list debit notes associated with purchase invoices.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Purchase module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Purchase &gt; Debit Note</li>
+<li>Select the Branch Name</li>
+<li>Specify the date range</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Select the relevant branch.</li>
+<li><strong>Form Date:</strong> Start date for reporting.</li>
+<li><strong>To Date:</strong> End date for reporting.</li>
+<li><strong>Purchase Invoice Search:</strong> Search for specific purchase invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> The table populates with debit note details based on search filters.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> debit note, purchase, invoice</p>
+<h3>Page: Vehicle</h3>
+<p><img src="screenshots/operation/inventory_transaction.png" alt="Inventory Transaction: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/inventoryTransaction</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Vehicle", "task": "Use Vehicle", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/inventoryTransaction", "screenshots": ["screenshots/operation/inventory_transaction.png"], "keywords": ["Vehicle", "inventory transaction"], "task_order": 1} -->
+<h4>Task: Use Vehicle</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Vehicle page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Vehicle No &amp; Code:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Vehicle, inventory transaction</p>
+<h3>Page: Item Destroy</h3>
+<p><img src="screenshots/operation/item_destroy.png" alt="Item Destroy: Screen" /></p>
+<p><img src="screenshots/operation/item_destroy_show.png" alt="Item Destroy: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to manage records of items that have been destroyed or written off.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/itemDestroy</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Item Destroy", "task": "View Destroyed Items", "action": "view", "roles": [], "route": "/operation/inventoryTransaction/itemDestroy", "screenshots": ["screenshots/operation/item_destroy.png", "screenshots/operation/item_destroy_show.png"], "keywords": ["item destroy", "write off", "inventory"], "task_order": 1} -->
+<h4>Task: View Destroyed Items</h4>
+<p><strong>Purpose:</strong> To see a report of items destroyed within a specified date range.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Inventory Transaction module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Item Destroy</li>
+<li>Select the Branch Name</li>
+<li>Set the 'From Date' and 'To Date'</li>
+<li>Select the Item Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Select the branch for inventory tracking.</li>
+<li><strong>From Date:</strong> Start date for the list.</li>
+<li><strong>To Date:</strong> End date for the list.</li>
+<li><strong>Item Type:</strong> Category of the items (e.g., Purchase Book Item).</li>
+</ul>
+<p><strong>Expected result:</strong> Displays a filtered list of destroyed items.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> item destroy, write off, inventory</p>
+<h3>Page: Transfer Out</h3>
+<p><img src="screenshots/operation/manufacturing.png" alt="Manufacturing: Screen" /></p>
+<p><img src="screenshots/operation/manufacturing_show.png" alt="Manufacturing: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/manufacturing</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer Out", "task": "Use Transfer Out", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/manufacturing", "screenshots": ["screenshots/operation/manufacturing.png", "screenshots/operation/manufacturing_show.png"], "keywords": ["Transfer Out", "manufacturing"], "task_order": 1} -->
+<h4>Task: Use Transfer Out</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Transfer Out page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Transfer No Search:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Transfer Out, manufacturing</p>
+<h3>Page: Vehicle</h3>
+<p><img src="screenshots/operation/operation.png" alt="Operation: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Vehicle", "task": "Use Vehicle", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation", "screenshots": ["screenshots/operation/operation.png"], "keywords": ["Vehicle", "operation"], "task_order": 1} -->
+<h4>Task: Use Vehicle</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Vehicle page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Vehicle No &amp; Code:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Vehicle, operation</p>
+<h3>Page: Price Declaration Wastage</h3>
+<p><img src="screenshots/operation/price_declaration_wastage.png" alt="Price Declaration Wastage: Screen" /></p>
+<p><strong>Page purpose:</strong> This page displays a list of wastage price declarations, showing validity dates, total quantities, and prices.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/priceDeclarationWastage</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Price Declaration Wastage", "task": "View price declaration wastage list", "action": "view", "roles": [], "route": "/operation/wastageManagement/priceDeclarationWastage", "screenshots": ["screenshots/operation/price_declaration_wastage.png"], "keywords": ["wastage", "price declaration"], "task_order": 1} -->
+<h4>Task: View price declaration wastage list</h4>
+<p><strong>Purpose:</strong> To see the registered wastage price declaration records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Wastage Management module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Price Declaration Wastage.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>SL:</strong> Serial number of the entry.</li>
+<li><strong>Valid From Date:</strong> Start date of the wastage price declaration.</li>
+<li><strong>Valid To Date:</strong> End date of the wastage price declaration.</li>
+<li><strong>Total Qty.:</strong> Total quantity of wastage items.</li>
+<li><strong>Total Price:</strong> The total declared price value.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing current and historical wastage price declarations.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, price declaration</p>
+<h3>Page: Production</h3>
+<p><img src="screenshots/operation/production.png" alt="Production: Screen" /></p>
+<p><img src="screenshots/operation/production_show.png" alt="Production: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and search for production records within a selected branch and date range.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/production</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Production", "task": "Search production records", "action": "search", "roles": [], "route": "/operation/manufacturing/production", "screenshots": ["screenshots/operation/production.png", "screenshots/operation/production_show.png"], "keywords": ["production", "manufacturing", "filter"], "task_order": 1} -->
+<h4>Task: Search production records</h4>
+<p><strong>Purpose:</strong> To find specific production records by branch and date.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is authorized to view Manufacturing data.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Production.</li>
+<li>Select the Branch Name.</li>
+<li>Enter or select the Form Date and To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> The specific branch to filter by.</li>
+<li><strong>Form Date:</strong> Beginning of the search date range.</li>
+<li><strong>To Date:</strong> End of the search date range.</li>
+<li><strong>Production No. Search:</strong> Field to filter by a specific production number.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of production entries matching the selected criteria will be displayed in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> production, manufacturing, filter</p>
+<h3>Page: Purchase</h3>
+<p><img src="screenshots/operation/purchase.png" alt="Purchase: Screen" /></p>
+<p><img src="screenshots/operation/purchase_show.png" alt="Purchase: Show" /></p>
+<p><strong>Page purpose:</strong> This page displays purchase invoice records and allows users to manage or search for them.</p>
+<p><strong>Route:</strong> <code>/operation/purchase/purchase</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Purchase", "task": "View purchase list", "action": "view", "roles": [], "route": "/operation/purchase/purchase", "screenshots": ["screenshots/operation/purchase.png", "screenshots/operation/purchase_show.png"], "keywords": ["purchase", "invoice", "procurement"], "task_order": 1} -->
+<h4>Task: View purchase list</h4>
+<p><strong>Purpose:</strong> To review existing purchase invoices for a specific branch and time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have access to the Purchase module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Purchase &gt; Purchase.</li>
+<li>Select the branch from the Select Branch field.</li>
+<li>Set the Enter From Date and Enter To Date.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> The operational branch to view.</li>
+<li><strong>Enter From Date:</strong> Start of the date filter.</li>
+<li><strong>Enter To Date:</strong> End of the date filter.</li>
+<li><strong>BOE, BIN, Supplier Search:</strong> Search input for specific invoices or suppliers.</li>
+</ul>
+<p><strong>Expected result:</strong> The purchase invoice table is populated with records matching the criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> purchase, invoice, procurement</p>
+<h3>Page: Purchase</h3>
+<p><img src="screenshots/operation/sales.png" alt="Sales: Screen" /></p>
+<p><img src="screenshots/operation/sales_show.png" alt="Sales: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/sales</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Purchase", "task": "Use Purchase", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/sales", "screenshots": ["screenshots/operation/sales.png", "screenshots/operation/sales_show.png"], "keywords": ["Purchase", "sales"], "task_order": 1} -->
+<h4>Task: Use Purchase</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Purchase page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+<li><strong>BOE, BIN, Supplier Search:</strong> Visible text control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Purchase, sales</p>
+<h3>Page: Sales Invoice</h3>
+<p><img src="screenshots/operation/sales_invoice.png" alt="Sales Invoice: Screen" /></p>
+<p><img src="screenshots/operation/sales_invoice_show.png" alt="Sales Invoice: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a search and display interface for all sales invoices recorded in the system.</p>
+<p><strong>Route:</strong> <code>/operation/sales/salesInvoice</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "Search sales invoices", "action": "search", "roles": [], "route": "/operation/sales/salesInvoice", "screenshots": ["screenshots/operation/sales_invoice.png", "screenshots/operation/sales_invoice_show.png"], "keywords": ["sales", "invoice", "billing"], "task_order": 1} -->
+<h4>Task: Search sales invoices</h4>
+<p><strong>Purpose:</strong> To locate specific sales invoice records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to Sales module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Sales &gt; Sales Invoice.</li>
+<li>Select a branch in the Select Branch field.</li>
+<li>Define the period using the From Date and To Date pickers.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Filtering by branch.</li>
+<li><strong>From Date:</strong> Beginning of the invoice date range.</li>
+<li><strong>To Date:</strong> End of the invoice date range.</li>
+<li><strong>BOE, BIN, Inv No Search:</strong> Find specific invoices by reference.</li>
+</ul>
+<p><strong>Expected result:</strong> Relevant sales invoices are shown in the table below.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales, invoice, billing</p>
+<h3>Page: Transfer In</h3>
+<p><img src="screenshots/operation/transfer_in.png" alt="Transfer In: Screen" /></p>
+<p><img src="screenshots/operation/transfer_in_show.png" alt="Transfer In: Show" /></p>
+<p><strong>Page purpose:</strong> This page lists inventory items that have been transferred into the branch.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/transferIn</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer In", "task": "Filter transfer-in records", "action": "filter", "roles": [], "route": "/operation/inventoryTransaction/transferIn", "screenshots": ["screenshots/operation/transfer_in.png", "screenshots/operation/transfer_in_show.png"], "keywords": ["transfer", "inventory", "stock"], "task_order": 1} -->
+<h4>Task: Filter transfer-in records</h4>
+<p><strong>Purpose:</strong> To narrow down inventory transfers into the branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to Inventory Transaction.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Transfer In.</li>
+<li>Select the Branch Name.</li>
+<li>Select the Item Type.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> The target branch for the transfer-in.</li>
+<li><strong>Item Type:</strong> Category of the inventory being transferred.</li>
+<li><strong>Transfer-In No Search:</strong> Search by transfer number.</li>
+</ul>
+<p><strong>Expected result:</strong> Inventory Transfer-In records matching the selection are displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> transfer, inventory, stock</p>
+<h3>Page: Transfer Out</h3>
+<p><img src="screenshots/operation/transfer_out.png" alt="Transfer Out: Screen" /></p>
+<p><img src="screenshots/operation/transfer_out_show.png" alt="Transfer Out: Show" /></p>
+<p><strong>Page purpose:</strong> This page displays details of inventory transferred out from the current branch to another destination.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/transferOut</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer Out", "task": "View transfer-out details", "action": "view", "roles": [], "route": "/operation/inventoryTransaction/transferOut", "screenshots": ["screenshots/operation/transfer_out.png", "screenshots/operation/transfer_out_show.png"], "keywords": ["transfer", "outbound", "stock"], "task_order": 1} -->
+<h4>Task: View transfer-out details</h4>
+<p><strong>Purpose:</strong> To review the history and details of outgoing inventory transfers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Inventory Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Transfer Out.</li>
+<li>Select the Branch Name.</li>
+<li>Select the Item Type.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Source branch of the items.</li>
+<li><strong>Item Type:</strong> The type of inventory items.</li>
+<li><strong>Transfer No Search:</strong> Search by specific transfer record number.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing transfers to other locations including destination, address, vehicle info, and date.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> transfer, outbound, stock</p>
+<h3>Page: Wastage In</h3>
+<p><img src="screenshots/operation/wastage_in.png" alt="Wastage In: Screen" /></p>
+<p><img src="screenshots/operation/wastage_in_show.png" alt="Wastage In: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view records of wastage brought into the facility.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/wastageIn</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Wastage In", "task": "Search wastage in records", "action": "search", "roles": [], "route": "/operation/wastageManagement/wastageIn", "screenshots": ["screenshots/operation/wastage_in.png", "screenshots/operation/wastage_in_show.png"], "keywords": ["wastage", "waste", "management"], "task_order": 1} -->
+<h4>Task: Search wastage in records</h4>
+<p><strong>Purpose:</strong> To review records of incoming waste items.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Wastage Management module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Wastage In.</li>
+<li>Select the Branch.</li>
+<li>Specify the date range in From Date and To Date.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> The branch where the wastage was received.</li>
+<li><strong>From Date:</strong> Beginning of the record search period.</li>
+<li><strong>To Date:</strong> End of the record search period.</li>
+</ul>
+<p><strong>Expected result:</strong> Records of incoming wastage items are displayed in the list.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, waste, management</p>
+<h3>Page: Sales Invoice</h3>
+<p><img src="screenshots/operation/wastage_management.png" alt="Wastage Management: Screen" /></p>
+<p><img src="screenshots/operation/wastage_management_show.png" alt="Wastage Management: Show" /></p>
+<p><strong>Page purpose:</strong> Used to view and manage sales invoices under the wastage management module.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "View Sales Invoices", "action": "view", "roles": [], "route": "/operation/wastageManagement", "screenshots": ["screenshots/operation/wastage_management.png", "screenshots/operation/wastage_management_show.png"], "keywords": ["sales", "invoice", "list", "view"], "task_order": 1} -->
+<h4>Task: View Sales Invoices</h4>
+<p><strong>Purpose:</strong> To list and review sales invoices within a specific date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Operation module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management</li>
+<li>Select a branch from the Select Branch dropdown</li>
+<li>Enter or select the From Date</li>
+<li>Enter or select the To Date</li>
+<li>Click the View button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to filter by business branch.</li>
+<li><strong>Enter From Date:</strong> Start date for the invoice search.</li>
+<li><strong>Enter To Date:</strong> End date for the invoice search.</li>
+</ul>
+<p><strong>Expected result:</strong> A table list of sales invoices matching the criteria will appear.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales, invoice, list, view</p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "Search Sales Invoices", "action": "search", "roles": [], "route": "/operation/wastageManagement", "screenshots": ["screenshots/operation/wastage_management.png", "screenshots/operation/wastage_management_show.png"], "keywords": ["search", "find", "BOE", "BIN"], "task_order": 2} -->
+<h4>Task: Search Sales Invoices</h4>
+<p><strong>Purpose:</strong> To find specific sales invoices using invoice identifiers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Operation module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management</li>
+<li>Enter a BOE, BIN, or Invoice Number in the search field</li>
+<li>Click the search icon</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>BOE, BIN, Inv No Search:</strong> Search input for specific document numbers.</li>
+</ul>
+<p><strong>Expected result:</strong> The table will update to show the matching invoice record.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> search, find, BOE, BIN</p>
+<h3>Page: Wastage Sales</h3>
+<p><img src="screenshots/operation/wastage_sales.png" alt="Wastage Sales: Screen" /></p>
+<p><img src="screenshots/operation/wastage_sales_show.png" alt="Wastage Sales: Show" /></p>
+<p><strong>Page purpose:</strong> Used to view and manage sales invoices related to wastage operations.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/wastageSalesInvoice</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Wastage Sales", "task": "View Wastage Sales", "action": "view", "roles": [], "route": "/operation/wastageManagement/wastageSalesInvoice", "screenshots": ["screenshots/operation/wastage_sales.png", "screenshots/operation/wastage_sales_show.png"], "keywords": ["wastage", "sales", "report"], "task_order": 1} -->
+<h4>Task: View Wastage Sales</h4>
+<p><strong>Purpose:</strong> To view the list of wastage sales records for a selected branch and period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is logged in</li>
+<li>Access to wastage sales module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Wastage Sales</li>
+<li>Select the branch</li>
+<li>Select the date range using From Date and To Date fields</li>
+<li>Click the View button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Branch selector.</li>
+<li><strong>Enter From Date:</strong> Beginning of the reporting period.</li>
+<li><strong>Enter To Date:</strong> End of the reporting period.</li>
+</ul>
+<p><strong>Expected result:</strong> The wastage sales table will be populated with invoice data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, sales, report</p>
+
+</body></html>

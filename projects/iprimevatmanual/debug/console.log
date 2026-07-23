@@ -1,0 +1,169 @@
+[log] https://devprimevat.ibos.io/dashboard :: Content is cached for offline use.
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[warning] https://devprimevat.ibos.io/dashboard :: Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2026-5, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at r.createFromInputFallback (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:111030)
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131393
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131444
+    at St (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131756)
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132030
+    at At (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132092)
+    at _t (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132124)
+    at r (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:107944)
+    at https://devprimevat.ibos.io/static/js/main.2038261c.chunk.js:2:18810
+    at Array.map (<anonymous>)
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/dashboard :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[warning] https://devprimevat.ibos.io/dashboard :: Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.
+Arguments: 
+[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 2026-5, _f: undefined, _strict: undefined, _locale: [object Object]
+Error
+    at r.createFromInputFallback (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:111030)
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131393
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131444
+    at St (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:131756)
+    at https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132030
+    at At (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132092)
+    at _t (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:132124)
+    at r (https://devprimevat.ibos.io/static/js/7.a54e0268.chunk.js:2:107944)
+    at https://devprimevat.ibos.io/static/js/main.2038261c.chunk.js:2:18810
+    at Array.map (<anonymous>)
+[log] https://devprimevat.ibos.io/dashboard :: Content is cached for offline use.
+[error] https://devprimevat.ibos.io/operation :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/sales :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/sales/salesInvoice :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/sales/credit-note :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/purchase :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/purchase/purchase :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/purchase/debit-note :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/manufacturing :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/manufacturing/production :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/manufacturing/production :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/manufacturing/production :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[error] https://devprimevat.ibos.io/operation/manufacturing/contactManufacturing :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/manufacturing/contactMFGReceive :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/wastageManagement :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/wastageManagement/wastageIn :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/wastageManagement/priceDeclarationWastage :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/wastageManagement/wastageSalesInvoice :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/inventoryTransaction :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/inventoryTransaction/transferIn :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/inventoryTransaction/transferOut :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/operation/inventoryTransaction/itemDestroy :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/treasuryAndOthers :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/treasuryAndOthers/treasuryDeposit :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/treasuryAndOthers/turnoverTax :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/treasuryAndOthers/varDeductatSource :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/adjustment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/adjustment/debitNoteAdjustment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/adjustment/creditNoteAdjustment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/adjustment/vdsAdjustment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction/adjustment/otherAdjustment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak4.3 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak4.4 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak4.5 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak4.6 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.2 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6-2-1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.3 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.4 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.5 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.6 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.7 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.8 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak6.10 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak9.1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/purchaseReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/salesReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/materialIssueReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/productionReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/treasuryDepositReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/debitNoteReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/creditNoteReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/chok-ka/kha :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/stockReconsileReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/stockRegister :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/purchaseSalesDetails :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/salesReportByCategory :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/purchaseReportByCategory :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/auditLog :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/paymentMethodWiseReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/auditReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/docVerificationSystem(DVS) :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/inventoryReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/SalesStockSummary :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/hsCodeVatSummary :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/transitReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/partnerVsStock :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/salesSummaryReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/salesAndPurchaseCompare :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/businessConfig :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/businessConfig/taxConfig :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/businessConfig/branch :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/item :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/itemCategory :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/unitOfMeasure :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/priceDeclaration :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/tarrifSchedule :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/itemConfig/tafsil :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/partnerConfig :: Failed to load resource: the server responded with a status of 500 ()
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[error] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: Failed to load resource: the server responded with a status of 500 ()
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[error] https://devprimevat.ibos.io/configuration/roleManagement :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/roleManagement/createUser :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/roleManagement/roleExtension :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/roleManagement/changePassword :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/roleManagement/roleAssignment :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/vehicleManagement :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/configuration/vehicleManagement/vehicle :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/client-integration :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/client-integration :: Failed to load resource: the server responded with a status of 405 ()
+[error] https://devprimevat.ibos.io/client-integration :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/client-integration :: Failed to load resource: the server responded with a status of 405 ()
+[log] https://devprimevat.ibos.io/client-integration :: Content is cached for offline use.
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[log] https://devprimevat.ibos.io/configuration/partnerConfig/partner :: {isNegativeSales: false, isSalesCenterMaintian: null, isPriceDeclarationAuto: true, isBoeMaintain: false, isChassisMaintain: false} controlPannelConfig
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak9.1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/mushakForms/mushak9.1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/SalesStockSummary :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/creditNoteReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/creditNoteReport :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[error] https://devprimevat.ibos.io/reports/otherReports/debitNoteReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/debitNoteReport :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[error] https://devprimevat.ibos.io/reports/otherReports/purchaseReport :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/reports/otherReports/purchaseReport :: Failed to load resource: net::ERR_HTTP2_PROTOCOL_ERROR
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/error/error-v1 :: Failed to load resource: the server responded with a status of 500 ()
+[error] https://devprimevat.ibos.io/transaction :: Failed to load resource: the server responded with a status of 500 ()

@@ -173,8 +173,8 @@ reading order.
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("project_dir", help="Project folder containing manual.pdf")
-    parser.add_argument("--pdf", help="PDF path; defaults to <project>/manual.pdf")
+    parser.add_argument("project_dir", help="Project folder containing pdf_analysis/overall.pdf")
+    parser.add_argument("--pdf", help="PDF path; defaults to <project>/pdf_analysis/overall.pdf (or manual.pdf for older projects)")
     parser.add_argument("--dpi", type=int, default=200)
     parser.add_argument(
         "--poppler-path",
@@ -183,7 +183,12 @@ def main() -> None:
     args = parser.parse_args()
 
     project_dir = Path(args.project_dir).resolve()
-    pdf_path = Path(args.pdf).resolve() if args.pdf else project_dir / "manual.pdf"
+    if args.pdf:
+        pdf_path = Path(args.pdf).resolve()
+    else:
+        pdf_path = project_dir / "pdf_analysis" / "overall.pdf"
+        if not pdf_path.is_file():
+            pdf_path = project_dir / "manual.pdf"  # older projects
     if not pdf_path.is_file():
         raise SystemExit(f"PDF not found: {pdf_path}")
     output_dir = project_dir / "pdf_analysis"

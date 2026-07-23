@@ -1,0 +1,3445 @@
+<!doctype html><html><head><meta charset="utf-8">
+<base href="file:///D:/User_Menual/projects/iprimevatmanual/">
+<title>primevat: User Manual</title><style>
+body { font-family: -apple-system, Segoe UI, Arial, sans-serif; color: #1f2430; line-height: 1.5; }
+.cover { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; page-break-after: always; }
+.cover h1 { font-size: 40px; margin-bottom: 8px; }
+.cover p { color: #667; }
+nav.toc { page-break-after: always; }
+nav.toc h2 { font-size: 22px; }
+nav.toc ul { list-style: none; padding-left: 0; }
+nav.toc li { margin: 6px 0; }
+nav.toc a { color: #1a4fd6; text-decoration: none; }
+h2 { font-size: 24px; border-bottom: 2px solid #ddd; padding-bottom: 6px; margin-top: 40px; page-break-before: always; }
+h3 { font-size: 19px; color: #17305a; margin-top: 30px; }
+h4 { font-size: 17px; color: #17305a; margin-top: 28px; }
+img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; margin: 10px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 13px; }
+code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+</style></head><body>
+<div class="cover"><h1>primevat: User Manual</h1><p>Generated user manual with step-by-step screenshots</p></div>
+<nav class="toc"><h2>Table of Contents</h2><ul><li><a href="#1-client-integration-module">1. Client Integration Module</a></li>
+<li><a href="#2-configuration-module">2. Configuration Module</a></li>
+<li><a href="#3-operation-module">3. Operation Module</a></li>
+<li><a href="#4-reports-module">4. Reports Module</a></li>
+<li><a href="#5-tax-accounting-module">5. Tax Accounting Module</a></li>
+<li><a href="#6-transaction-module">6. Transaction Module</a></li></ul></nav>
+<h1>primevat: User Manual</h1>
+<p><strong>Software purpose:</strong> Generate manual</p>
+<p><strong>Target audience:</strong> client</p>
+<h2 id="1-client-integration-module">1. Client Integration Module</h2>
+<h3>Page: Client Integration</h3>
+<p><img src="screenshots/client_integration/client_integration.png" alt="Client Integration: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides an interface to view and manage integrated client data across various modules such as Items, Partners, and Transactions.</p>
+<p><strong>Route:</strong> <code>/client-integration</code></p>
+<!-- manual-meta: {"module": "Client Integration", "page": "Client Integration", "task": "View integrated item list", "action": "view", "roles": [], "route": "/client-integration", "screenshots": ["screenshots/client_integration/client_integration.png"], "keywords": ["list items", "integration view", "item catalog"], "task_order": 1} -->
+<h4>Task: View integrated item list</h4>
+<p><strong>Purpose:</strong> To review the list of items integrated from the client system.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is logged into Prime VAT</li>
+<li>A company is selected from the top-left dropdown</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the 'CLIENT INTEGRATION' menu item in the left sidebar.</li>
+<li>Click on the 'ITEM' tab if not already selected.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>SL:</strong> Serial number of the item.</li>
+<li><strong>Item Code:</strong> Unique identifier for the item.</li>
+<li><strong>Item Name:</strong> Descriptive name of the item.</li>
+<li><strong>Item Type:</strong> The classification type of the item.</li>
+<li><strong>Item Category:</strong> The category the item belongs to.</li>
+<li><strong>Subcategory:</strong> The specific subcategory of the item.</li>
+<li><strong>Unit of Measure:</strong> The standard unit used to measure the item.</li>
+<li><strong>Average Rate:</strong> The calculated average cost or rate for the item.</li>
+<li><strong>Current Selling Price:</strong> The present market or system selling price.</li>
+<li><strong>Action:</strong> Available actions for the specific row entry.</li>
+</ul>
+<p><strong>Expected result:</strong> The table populates with integrated item records if available.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> list items, integration view, item catalog</p>
+<h2 id="2-configuration-module">2. Configuration Module</h2>
+<h3>Page: Branch</h3>
+<p><img src="screenshots/configuration/branch.png" alt="Branch: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows the user to manage and view branch locations for the business.</p>
+<p><strong>Route:</strong> <code>/configuration/businessConfig/branch</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Branch", "task": "Create new branch", "action": "create", "roles": [], "route": "/configuration/businessConfig/branch", "screenshots": ["screenshots/configuration/branch.png"], "keywords": ["add branch", "new office"], "task_order": 1} -->
+<h4>Task: Create new branch</h4>
+<p><strong>Purpose:</strong> To add a new branch location to the system.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Must be logged in with appropriate permissions</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select Business Config</li>
+<li>Click on Branch</li>
+<li>Click the Create New button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Name of the branch.</li>
+<li><strong>Branch Address:</strong> Address details of the branch.</li>
+</ul>
+<p><strong>Expected result:</strong> A new branch is added to the list.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> add branch, new office</p>
+<!-- manual-meta: {"module": "Configuration", "page": "Branch", "task": "View branch list", "action": "view", "roles": [], "route": "/configuration/businessConfig/branch", "screenshots": ["screenshots/configuration/branch.png"], "keywords": ["list branches", "all locations"], "task_order": 2} -->
+<h4>Task: View branch list</h4>
+<p><strong>Purpose:</strong> To view all existing business branches.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select Business Config</li>
+<li>Click on Branch</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>SL:</strong> Serial number.</li>
+<li><strong>Branch Name:</strong> Name of the branch.</li>
+<li><strong>Branch Address:</strong> Physical location of the branch.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of branches is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> list branches, all locations</p>
+<h3>Page: Client Integration</h3>
+<p><img src="screenshots/configuration/business_config.png" alt="Business Config: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/configuration/businessConfig</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Client Integration", "task": "Use Client Integration", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/configuration/businessConfig", "screenshots": ["screenshots/configuration/business_config.png"], "keywords": ["Client Integration", "business config"], "task_order": 1} -->
+<h4>Task: Use Client Integration</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Client Integration page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Client Integration, business config</p>
+<h3>Page: Change Password</h3>
+<p><img src="screenshots/configuration/change_password.png" alt="Change Password: Screen" /></p>
+<p><strong>Page purpose:</strong> Allows users to update their account login credentials.</p>
+<p><strong>Route:</strong> <code>/configuration/roleManagement/changePassword</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Change Password", "task": "Change user password", "action": "edit", "roles": [], "route": "/configuration/roleManagement/changePassword", "screenshots": ["screenshots/configuration/change_password.png"], "keywords": ["password update", "security"], "task_order": 1} -->
+<h4>Task: Change user password</h4>
+<p><strong>Purpose:</strong> To update the current user password for security.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Must know the current password</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select User Management</li>
+<li>Click Change Password</li>
+<li>Enter Old Password</li>
+<li>Enter New Password</li>
+<li>Enter Confirm Password</li>
+<li>Click Save</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Enter Old Password:</strong> Existing account password.</li>
+<li><strong>Enter New Password:</strong> New desired password.</li>
+<li><strong>Enter Confirm Password:</strong> Retype new password for verification.</li>
+</ul>
+<p><strong>Expected result:</strong> Password updated successfully.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> password update, security</p>
+<h3>Page: Client Integration</h3>
+<p><img src="screenshots/configuration/configuration.png" alt="Configuration: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/configuration</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Client Integration", "task": "Use Client Integration", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/configuration", "screenshots": ["screenshots/configuration/configuration.png"], "keywords": ["Client Integration", "configuration"], "task_order": 1} -->
+<h4>Task: Use Client Integration</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Client Integration page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Client Integration, configuration</p>
+<h3>Page: User List</h3>
+<p><img src="screenshots/configuration/create_user.png" alt="Create User: Screen" /></p>
+<p><strong>Page purpose:</strong> Manage system users and access rights.</p>
+<p><strong>Route:</strong> <code>/configuration/roleManagement/createUser</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "User List", "task": "View system users", "action": "view", "roles": [], "route": "/configuration/roleManagement/createUser", "screenshots": ["screenshots/configuration/create_user.png"], "keywords": ["user list", "manage users"], "task_order": 1} -->
+<h4>Task: View system users</h4>
+<p><strong>Purpose:</strong> To review the list of registered users and their details.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select User Management</li>
+<li>Click Create User</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>User (ID):</strong> Unique identifier for the user.</li>
+<li><strong>User Name:</strong> Full name of the user.</li>
+<li><strong>Email Address:</strong> Registered email address.</li>
+<li><strong>Country Name:</strong> Country of the user.</li>
+<li><strong>Contact Number:</strong> Phone number for the user.</li>
+</ul>
+<p><strong>Expected result:</strong> A table of users is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> user list, manage users</p>
+<h3>Page: Customer/Supplier Profile</h3>
+<p><img src="screenshots/configuration/customer_supplier.png" alt="Customer Supplier: Screen" /></p>
+<p><strong>Page purpose:</strong> Central list of all business partners, including customers and suppliers.</p>
+<p><strong>Route:</strong> <code>/configuration/partnerConfig/partner</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Customer/Supplier Profile", "task": "Filter partners", "action": "filter", "roles": [], "route": "/configuration/partnerConfig/partner", "screenshots": ["screenshots/configuration/customer_supplier.png"], "keywords": ["filter customers", "search suppliers"], "task_order": 1} -->
+<h4>Task: Filter partners</h4>
+<p><strong>Purpose:</strong> To find specific partners based on their classification.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select Customer/Supplier Config</li>
+<li>Click Customer/Supplier</li>
+<li>Select type (All, VDS Applicable, Without VDS Applicable)</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Customer/Supplier Name Search:</strong> Keyword search for business name.</li>
+</ul>
+<p><strong>Expected result:</strong> The table content updates to show filtered partners.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> filter customers, search suppliers</p>
+<h3>Page: Unit Of Measurement</h3>
+<p><img src="screenshots/configuration/customer_supplier_config.png" alt="Customer Supplier Config: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/configuration/partnerConfig</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Unit Of Measurement", "task": "Use Unit Of Measurement", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/configuration/partnerConfig", "screenshots": ["screenshots/configuration/customer_supplier_config.png"], "keywords": ["Unit Of Measurement", "customer supplier config"], "task_order": 1} -->
+<h4>Task: Use Unit Of Measurement</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Unit Of Measurement page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Name &amp; Code Search:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Unit Of Measurement, customer supplier config</p>
+<h3>Page: Item</h3>
+<p><img src="screenshots/configuration/item.png" alt="Item: Screen" /></p>
+<p><strong>Page purpose:</strong> Main registry for all items tracked in the system.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/item</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Item", "task": "Search items", "action": "search", "roles": [], "route": "/configuration/itemConfig/item", "screenshots": ["screenshots/configuration/item.png"], "keywords": ["find item", "item search"], "task_order": 1} -->
+<h4>Task: Search items</h4>
+<p><strong>Purpose:</strong> To quickly locate items by category or type.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select Item Config</li>
+<li>Click Item</li>
+<li>Enter term in Item Type or Category search field</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Type or Category:</strong> Text box to filter the list.</li>
+</ul>
+<p><strong>Expected result:</strong> The item table updates to match the search query.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> find item, item search</p>
+<!-- manual-meta: {"module": "Configuration", "page": "Item", "task": "Export items", "action": "export", "roles": [], "route": "/configuration/itemConfig/item", "screenshots": ["screenshots/configuration/item.png"], "keywords": ["report", "download excel"], "task_order": 2} -->
+<h4>Task: Export items</h4>
+<p><strong>Purpose:</strong> To download the item registry as an Excel file.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Select Item Config</li>
+<li>Click Item</li>
+<li>Click Excel Download</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> File download begins.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> report, download excel</p>
+<h3>Page: Item Category</h3>
+<p><img src="screenshots/configuration/item_category.png" alt="Item Category: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and manage item categories, which help in organizing items within the inventory.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/itemCategory</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Item Category", "task": "View Item Categories", "action": "view", "roles": [], "route": "/configuration/itemConfig/itemCategory", "screenshots": ["screenshots/configuration/item_category.png"], "keywords": ["category", "item category", "list"], "task_order": 1} -->
+<h4>Task: View Item Categories</h4>
+<p><strong>Purpose:</strong> To see a list of existing item categories and their associated codes.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must be logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Item Config &gt; Item Category</li>
+<li>View the list displayed in the table</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>SL:</strong> Serial number of the category.</li>
+<li><strong>Category Code:</strong> Unique code identifier for the category.</li>
+<li><strong>Item Type:</strong> The general type of the item.</li>
+<li><strong>Category Name:</strong> The display name of the category.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of item categories is shown in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> category, item category, list</p>
+<!-- manual-meta: {"module": "Configuration", "page": "Item Category", "task": "Search Item Categories", "action": "search", "roles": [], "route": "/configuration/itemConfig/itemCategory", "screenshots": ["screenshots/configuration/item_category.png"], "keywords": ["filter", "search"], "task_order": 2} -->
+<h4>Task: Search Item Categories</h4>
+<p><strong>Purpose:</strong> To quickly locate specific item categories by name or type.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Existing item categories</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Item Category page</li>
+<li>Enter the search term into the 'Category Name and Type Search' field</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Category Name and Type Search:</strong> Input field for filtering categories.</li>
+</ul>
+<p><strong>Expected result:</strong> The table content is filtered based on the search query.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> filter, search</p>
+<h3>Page: Tax Config</h3>
+<p><img src="screenshots/configuration/item_config.png" alt="Item Config: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/configuration/itemConfig</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Tax Config", "task": "Use Tax Config", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/configuration/itemConfig", "screenshots": ["screenshots/configuration/item_config.png"], "keywords": ["Tax Config", "item config"], "task_order": 1} -->
+<h4>Task: Use Tax Config</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Tax Config page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>returnSubmissionDate:</strong> Visible date control.</li>
+<li><strong>Representative Designation:</strong> Visible text control.</li>
+<li><strong>Representative Address:</strong> Visible text control.</li>
+<li><strong>Bin No:</strong> Visible text control.</li>
+<li><strong>Busines Unit Address:</strong> Visible text control.</li>
+<li><strong>Economic Activity Name:</strong> Visible text control.</li>
+<li><strong>Vat Deduction Source Tax:</strong> Visible checkbox control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Tax Config, item config</p>
+<h3>Page: Price Declaration</h3>
+<p><img src="screenshots/configuration/price_declaration.png" alt="Price Declaration: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is used to manage and view price declarations for different items.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/priceDeclaration</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Price Declaration", "task": "View Price Declarations", "action": "view", "roles": [], "route": "/configuration/itemConfig/priceDeclaration", "screenshots": ["screenshots/configuration/price_declaration.png"], "keywords": ["price", "declaration", "vat"], "task_order": 1} -->
+<h4>Task: View Price Declarations</h4>
+<p><strong>Purpose:</strong> To review the pricing details, VAT, and validity dates for items.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Configuration module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Item Config &gt; Price Declaration</li>
+<li>Browse the table rows</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Name:</strong> The name of the item declared.</li>
+<li><strong>Base Price:</strong> The starting price for the item.</li>
+<li><strong>VAT(%):</strong> VAT percentage applied.</li>
+<li><strong>Valid From:</strong> Start date of the price declaration.</li>
+<li><strong>Valid To:</strong> End date of the price declaration.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of price declarations is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> price, declaration, vat</p>
+<h3>Page: Role Assignment</h3>
+<p><img src="screenshots/configuration/role_assignment.png" alt="Role Assignment: Screen" /></p>
+<p><strong>Page purpose:</strong> Manages the assignment of roles to users or user groups.</p>
+<p><strong>Route:</strong> <code>/configuration/roleManagement/roleAssignment</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Role Assignment", "task": "View Role Assignments", "action": "view", "roles": [], "route": "/configuration/roleManagement/roleAssignment", "screenshots": ["screenshots/configuration/role_assignment.png"], "keywords": ["assignment", "role", "user role"], "task_order": 1} -->
+<h4>Task: View Role Assignments</h4>
+<p><strong>Purpose:</strong> To audit which users or groups are assigned to specific roles.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User Management permissions</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; User Management &gt; Role Assignment</li>
+<li>Observe the assigned user groups in the table</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>User Name / Group:</strong> Identifies the user or the group assigned to a role.</li>
+</ul>
+<p><strong>Expected result:</strong> A table of current role assignments is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> assignment, role, user role</p>
+<h3>Page: Tafsil</h3>
+<p><img src="screenshots/configuration/tafsil.png" alt="Tafsil: Screen" /></p>
+<p><img src="screenshots/configuration/tafsil_show.png" alt="Tafsil: Show" /></p>
+<p><strong>Page purpose:</strong> Displays detailed VAT and HS Code information for financial and reporting purposes.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/tafsil</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Tafsil", "task": "Export Tafsil Data", "action": "export", "roles": [], "route": "/configuration/itemConfig/tafsil", "screenshots": ["screenshots/configuration/tafsil.png", "screenshots/configuration/tafsil_show.png"], "keywords": ["export", "excel", "report"], "task_order": 1} -->
+<h4>Task: Export Tafsil Data</h4>
+<p><strong>Purpose:</strong> To generate an Excel report of the current schedule data.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Data must be present in the table</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Item Config &gt; Tafsil</li>
+<li>Click the 'Export Excel' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> An Excel file containing the displayed list is downloaded.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> export, excel, report</p>
+<h3>Page: Tarrif Schedule</h3>
+<p><img src="screenshots/configuration/tarrif_schedule.png" alt="Tarrif Schedule: Screen" /></p>
+<p><img src="screenshots/configuration/tarrif_schedule_show.png" alt="Tarrif Schedule: Show" /></p>
+<p><strong>Page purpose:</strong> Provides a comprehensive view of tariff schedules, including tax rates, CD, RD, SD, and VAT details.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/tarrifSchedule</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Tarrif Schedule", "task": "View Tariff Schedule", "action": "view", "roles": [], "route": "/configuration/itemConfig/tarrifSchedule", "screenshots": ["screenshots/configuration/tarrif_schedule.png", "screenshots/configuration/tarrif_schedule_show.png"], "keywords": ["tariff", "hs code", "tax"], "task_order": 1} -->
+<h4>Task: View Tariff Schedule</h4>
+<p><strong>Purpose:</strong> To review specific tax codes and associated duty rates for the current fiscal year.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Item Config &gt; Tarrif Schedule</li>
+<li>Select the 'Fiscal Year' and click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>HS Code:</strong> Harmonized System code for the item.</li>
+<li><strong>VAT:</strong> Value Added Tax percentage.</li>
+<li><strong>CD:</strong> Customs Duty rate.</li>
+</ul>
+<p><strong>Expected result:</strong> The tariff table updates to show the selected fiscal year data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> tariff, hs code, tax</p>
+<h3>Page: Tax Config</h3>
+<p><img src="screenshots/configuration/tax_config.png" alt="Tax Config: Screen" /></p>
+<p><strong>Page purpose:</strong> Used for configuring fundamental tax-related details for the business.</p>
+<p><strong>Route:</strong> <code>/configuration/businessConfig/taxConfig</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Tax Config", "task": "Configure Business Tax Details", "action": "configure", "roles": [], "route": "/configuration/businessConfig/taxConfig", "screenshots": ["screenshots/configuration/tax_config.png"], "keywords": ["tax", "bin", "configuration"], "task_order": 1} -->
+<h4>Task: Configure Business Tax Details</h4>
+<p><strong>Purpose:</strong> To define organizational tax identifiers and representative contact information.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Admin access</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Business Config &gt; Tax Config</li>
+<li>Fill in the required tax fields</li>
+<li>Review entries before saving</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Tax Zone:</strong> Operational tax zone.</li>
+<li><strong>Tax Circle:</strong> Operational tax circle.</li>
+<li><strong>Enter Bin No.:</strong> Business Identification Number.</li>
+</ul>
+<p><strong>Expected result:</strong> Tax settings are updated.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> tax, bin, configuration</p>
+<h3>Page: Unit Of Measurement</h3>
+<p><img src="screenshots/configuration/unit_of_measure.png" alt="Unit Of Measure: Screen" /></p>
+<p><strong>Page purpose:</strong> Lists all defined units of measurement used for items within the system.</p>
+<p><strong>Route:</strong> <code>/configuration/itemConfig/unitOfMeasure</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Unit Of Measurement", "task": "View Units of Measurement", "action": "view", "roles": [], "route": "/configuration/itemConfig/unitOfMeasure", "screenshots": ["screenshots/configuration/unit_of_measure.png"], "keywords": ["uom", "unit", "measurement"], "task_order": 1} -->
+<h4>Task: View Units of Measurement</h4>
+<p><strong>Purpose:</strong> To check available units for item creation.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to CONFIGURATION &gt; Item Config &gt; Unit Of Measure</li>
+<li>Review the table for existing units</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Unit Of Measurement:</strong> Name of the unit (e.g., Ton, Set, Pice).</li>
+<li><strong>Unit Of Measurement Code:</strong> Abbreviated code for the unit.</li>
+</ul>
+<p><strong>Expected result:</strong> A full list of measurement units is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> uom, unit, measurement</p>
+<h3>Page: Customer/Supplier Profile</h3>
+<p><img src="screenshots/configuration/user_management.png" alt="User Management: Screen" /></p>
+<p><strong>Page purpose:</strong> This page displays a list of customer and supplier profiles, allowing for filtering, searching, and viewing of business records.</p>
+<p><strong>Route:</strong> <code>/configuration/roleManagement</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Customer/Supplier Profile", "task": "Filter Customer/Supplier list", "action": "filter", "roles": [], "route": "/configuration/roleManagement", "screenshots": ["screenshots/configuration/user_management.png"], "keywords": ["VDS", "filter", "partner status"], "task_order": 1} -->
+<h4>Task: Filter Customer/Supplier list</h4>
+<p><strong>Purpose:</strong> To narrow down the list of partners by their VDS status.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Configuration module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Configuration</li>
+<li>Click on User Management</li>
+<li>Select one of the radio buttons: 'All', 'VDS Applicable', or 'Without VDS Applicable'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Customer/Supplier Type:</strong> Radio button group to filter by VDS status.</li>
+</ul>
+<p><strong>Expected result:</strong> The table displays only records matching the selected VDS criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, filter, partner status</p>
+<!-- manual-meta: {"module": "Configuration", "page": "Customer/Supplier Profile", "task": "Search for a profile", "action": "search", "roles": [], "route": "/configuration/roleManagement", "screenshots": ["screenshots/configuration/user_management.png"], "keywords": ["search", "find business"], "task_order": 2} -->
+<h4>Task: Search for a profile</h4>
+<p><strong>Purpose:</strong> To find a specific customer or supplier record by name.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is on the Customer/Supplier Profile page</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Click into the 'Customer/Supplier Name Search' field</li>
+<li>Type the name of the business entity</li>
+<li>Press Enter or wait for the system to filter the table</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Customer/Supplier Name Search:</strong> Text input for searching by business name.</li>
+</ul>
+<p><strong>Expected result:</strong> The table updates to show only the entries matching the search term.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> search, find business</p>
+<h3>Page: Role Extension</h3>
+<p><img src="screenshots/configuration/user_role_extension.png" alt="User Role Extension: Screen" /></p>
+<p><strong>Page purpose:</strong> This page manages the extension of user roles and their associated business units.</p>
+<p><strong>Route:</strong> <code>/configuration/roleManagement/roleExtension</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Role Extension", "task": "Search for an employee", "action": "search", "roles": [], "route": "/configuration/roleManagement/roleExtension", "screenshots": ["screenshots/configuration/user_role_extension.png"], "keywords": ["search employee", "role extension search"], "task_order": 1} -->
+<h4>Task: Search for an employee</h4>
+<p><strong>Purpose:</strong> To locate a specific employee in the role extension list.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is on the Role Extension page</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Locate the 'Employee Name Search' input field</li>
+<li>Enter the employee name or part of the name</li>
+<li>Observe the filtered list in the table</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Employee Name Search:</strong> Field to search for employees by name.</li>
+</ul>
+<p><strong>Expected result:</strong> The list updates to show only employees matching the search criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> search employee, role extension search</p>
+<h3>Page: Vehicle</h3>
+<p><img src="screenshots/configuration/vehicle.png" alt="Vehicle: Screen" /></p>
+<p><strong>Page purpose:</strong> This page lists vehicles and allows users to manage or search for vehicle details.</p>
+<p><strong>Route:</strong> <code>/configuration/vehicleManagement/vehicle</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Vehicle", "task": "Search for a vehicle", "action": "search", "roles": [], "route": "/configuration/vehicleManagement/vehicle", "screenshots": ["screenshots/configuration/vehicle.png"], "keywords": ["find vehicle", "vehicle search"], "task_order": 1} -->
+<h4>Task: Search for a vehicle</h4>
+<p><strong>Purpose:</strong> To find a specific vehicle by its number or code.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is on the Vehicle configuration page</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Go to Configuration &gt; Vehicle Management &gt; Vehicle</li>
+<li>Enter the vehicle number or code into the 'Vehicle No &amp; Code' search field</li>
+<li>The table automatically refreshes to show the relevant vehicle</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Vehicle No &amp; Code:</strong> Search input to filter vehicles by identifier.</li>
+</ul>
+<p><strong>Expected result:</strong> The list of vehicles is narrowed down to the matching record.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> find vehicle, vehicle search</p>
+<h3>Page: Role Extension</h3>
+<p><img src="screenshots/configuration/vehicle_management.png" alt="Vehicle Management: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/configuration/vehicleManagement</code></p>
+<!-- manual-meta: {"module": "Configuration", "page": "Role Extension", "task": "Use Role Extension", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/configuration/vehicleManagement", "screenshots": ["screenshots/configuration/vehicle_management.png"], "keywords": ["Role Extension", "vehicle management"], "task_order": 1} -->
+<h4>Task: Use Role Extension</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Role Extension page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Employee Name Search:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Role Extension, vehicle management</p>
+<h2 id="3-operation-module">3. Operation Module</h2>
+<h3>Page: Contract Manufacturing Issue</h3>
+<p><img src="screenshots/operation/contract_manufacturing_issue.png" alt="Contract Manufacturing Issue: Screen" /></p>
+<p><img src="screenshots/operation/contract_manufacturing_issue_show.png" alt="Contract Manufacturing Issue: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view and manage raw materials issued for contract manufacturing processes.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/contactManufacturing</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Contract Manufacturing Issue", "task": "View Contract Manufacturing Issues", "action": "view", "roles": [], "route": "/operation/manufacturing/contactManufacturing", "screenshots": ["screenshots/operation/contract_manufacturing_issue.png", "screenshots/operation/contract_manufacturing_issue_show.png"], "keywords": ["manufacturing", "issue", "raw material", "contract"], "task_order": 1} -->
+<h4>Task: View Contract Manufacturing Issues</h4>
+<p><strong>Purpose:</strong> To list contract manufacturing issue records for a specific date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Manufacturing module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Contract Manufacturing Issue</li>
+<li>Select the Branch from the dropdown</li>
+<li>Select the 'From Date'</li>
+<li>Select the 'To Date'</li>
+<li>Select the Issue Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the relevant branch office.</li>
+<li><strong>From Date:</strong> Starting date for the record search.</li>
+<li><strong>To Date:</strong> Ending date for the record search.</li>
+<li><strong>Issue Type:</strong> Type of manufacturing issue (e.g., Issue Raw Material).</li>
+</ul>
+<p><strong>Expected result:</strong> A table displaying records matching the specified filter criteria appears.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> manufacturing, issue, raw material, contract</p>
+<h3>Page: Contract Manufacturing Receive</h3>
+<p><img src="screenshots/operation/contract_manufacturing_receive.png" alt="Contract Manufacturing Receive: Screen" /></p>
+<p><img src="screenshots/operation/contract_manufacturing_receive_show.png" alt="Contract Manufacturing Receive: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to manage the receipt of raw materials back from contract manufacturing.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/contactMFGReceive</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Contract Manufacturing Receive", "task": "View Contract Manufacturing Receipts", "action": "view", "roles": [], "route": "/operation/manufacturing/contactMFGReceive", "screenshots": ["screenshots/operation/contract_manufacturing_receive.png", "screenshots/operation/contract_manufacturing_receive_show.png"], "keywords": ["receive", "raw material", "manufacturing", "receipt"], "task_order": 1} -->
+<h4>Task: View Contract Manufacturing Receipts</h4>
+<p><strong>Purpose:</strong> To view records of raw materials received from contract manufacturing.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Manufacturing module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Contract Manufacturing Receive</li>
+<li>Select the Branch</li>
+<li>Define the date range using 'From Date' and 'To Date'</li>
+<li>Select the Receive Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> The branch associated with the receipt.</li>
+<li><strong>From Date:</strong> Beginning of the date range.</li>
+<li><strong>To Date:</strong> End of the date range.</li>
+<li><strong>Receive Type:</strong> The category of receipt (e.g., Receive Raw Material).</li>
+</ul>
+<p><strong>Expected result:</strong> A list of receipt transactions is displayed in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> receive, raw material, manufacturing, receipt</p>
+<h3>Page: Credit Note</h3>
+<p><img src="screenshots/operation/credit_note.png" alt="Credit Note: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and search for sales credit notes.</p>
+<p><strong>Route:</strong> <code>/operation/sales/credit-note</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Credit Note", "task": "Search Credit Notes", "action": "search", "roles": [], "route": "/operation/sales/credit-note", "screenshots": ["screenshots/operation/credit_note.png"], "keywords": ["credit note", "sales", "invoice"], "task_order": 1} -->
+<h4>Task: Search Credit Notes</h4>
+<p><strong>Purpose:</strong> To filter and locate specific credit notes issued to customers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Sales module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Sales &gt; Credit Note</li>
+<li>Select the Branch</li>
+<li>Set the 'Form Date' and 'To Date'</li>
+<li>Enter a value in the 'Sales Invoice Search' field</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the branch for the credit note.</li>
+<li><strong>Form Date:</strong> Start date for the search.</li>
+<li><strong>To Date:</strong> End date for the search.</li>
+<li><strong>Sales Invoice Search:</strong> Keyword search for specific sales invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> Credit note records matching the search criteria are displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> credit note, sales, invoice</p>
+<h3>Page: Debit Note</h3>
+<p><img src="screenshots/operation/debit_note.png" alt="Debit Note: Screen" /></p>
+<p><img src="screenshots/operation/debit_note_show.png" alt="Debit Note: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view and search for purchase-related debit notes.</p>
+<p><strong>Route:</strong> <code>/operation/purchase/debit-note</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Debit Note", "task": "View Debit Notes", "action": "view", "roles": [], "route": "/operation/purchase/debit-note", "screenshots": ["screenshots/operation/debit_note.png", "screenshots/operation/debit_note_show.png"], "keywords": ["debit note", "purchase", "invoice"], "task_order": 1} -->
+<h4>Task: View Debit Notes</h4>
+<p><strong>Purpose:</strong> To list debit notes associated with purchase invoices.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Purchase module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Purchase &gt; Debit Note</li>
+<li>Select the Branch Name</li>
+<li>Specify the date range</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Select the relevant branch.</li>
+<li><strong>Form Date:</strong> Start date for reporting.</li>
+<li><strong>To Date:</strong> End date for reporting.</li>
+<li><strong>Purchase Invoice Search:</strong> Search for specific purchase invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> The table populates with debit note details based on search filters.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> debit note, purchase, invoice</p>
+<h3>Page: Vehicle</h3>
+<p><img src="screenshots/operation/inventory_transaction.png" alt="Inventory Transaction: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/inventoryTransaction</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Vehicle", "task": "Use Vehicle", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/inventoryTransaction", "screenshots": ["screenshots/operation/inventory_transaction.png"], "keywords": ["Vehicle", "inventory transaction"], "task_order": 1} -->
+<h4>Task: Use Vehicle</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Vehicle page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Vehicle No &amp; Code:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Vehicle, inventory transaction</p>
+<h3>Page: Item Destroy</h3>
+<p><img src="screenshots/operation/item_destroy.png" alt="Item Destroy: Screen" /></p>
+<p><img src="screenshots/operation/item_destroy_show.png" alt="Item Destroy: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to manage records of items that have been destroyed or written off.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/itemDestroy</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Item Destroy", "task": "View Destroyed Items", "action": "view", "roles": [], "route": "/operation/inventoryTransaction/itemDestroy", "screenshots": ["screenshots/operation/item_destroy.png", "screenshots/operation/item_destroy_show.png"], "keywords": ["item destroy", "write off", "inventory"], "task_order": 1} -->
+<h4>Task: View Destroyed Items</h4>
+<p><strong>Purpose:</strong> To see a report of items destroyed within a specified date range.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Inventory Transaction module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Item Destroy</li>
+<li>Select the Branch Name</li>
+<li>Set the 'From Date' and 'To Date'</li>
+<li>Select the Item Type</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Select the branch for inventory tracking.</li>
+<li><strong>From Date:</strong> Start date for the list.</li>
+<li><strong>To Date:</strong> End date for the list.</li>
+<li><strong>Item Type:</strong> Category of the items (e.g., Purchase Book Item).</li>
+</ul>
+<p><strong>Expected result:</strong> Displays a filtered list of destroyed items.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> item destroy, write off, inventory</p>
+<h3>Page: Transfer Out</h3>
+<p><img src="screenshots/operation/manufacturing.png" alt="Manufacturing: Screen" /></p>
+<p><img src="screenshots/operation/manufacturing_show.png" alt="Manufacturing: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/manufacturing</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer Out", "task": "Use Transfer Out", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/manufacturing", "screenshots": ["screenshots/operation/manufacturing.png", "screenshots/operation/manufacturing_show.png"], "keywords": ["Transfer Out", "manufacturing"], "task_order": 1} -->
+<h4>Task: Use Transfer Out</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Transfer Out page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Transfer No Search:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Transfer Out, manufacturing</p>
+<h3>Page: Vehicle</h3>
+<p><img src="screenshots/operation/operation.png" alt="Operation: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Vehicle", "task": "Use Vehicle", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation", "screenshots": ["screenshots/operation/operation.png"], "keywords": ["Vehicle", "operation"], "task_order": 1} -->
+<h4>Task: Use Vehicle</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Vehicle page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Vehicle No &amp; Code:</strong> Visible text control.</li>
+<li><strong>rows per page:</strong> Visible select control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Vehicle, operation</p>
+<h3>Page: Price Declaration Wastage</h3>
+<p><img src="screenshots/operation/price_declaration_wastage.png" alt="Price Declaration Wastage: Screen" /></p>
+<p><strong>Page purpose:</strong> This page displays a list of wastage price declarations, showing validity dates, total quantities, and prices.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/priceDeclarationWastage</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Price Declaration Wastage", "task": "View price declaration wastage list", "action": "view", "roles": [], "route": "/operation/wastageManagement/priceDeclarationWastage", "screenshots": ["screenshots/operation/price_declaration_wastage.png"], "keywords": ["wastage", "price declaration"], "task_order": 1} -->
+<h4>Task: View price declaration wastage list</h4>
+<p><strong>Purpose:</strong> To see the registered wastage price declaration records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Wastage Management module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Price Declaration Wastage.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>SL:</strong> Serial number of the entry.</li>
+<li><strong>Valid From Date:</strong> Start date of the wastage price declaration.</li>
+<li><strong>Valid To Date:</strong> End date of the wastage price declaration.</li>
+<li><strong>Total Qty.:</strong> Total quantity of wastage items.</li>
+<li><strong>Total Price:</strong> The total declared price value.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing current and historical wastage price declarations.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, price declaration</p>
+<h3>Page: Production</h3>
+<p><img src="screenshots/operation/production.png" alt="Production: Screen" /></p>
+<p><img src="screenshots/operation/production_show.png" alt="Production: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and search for production records within a selected branch and date range.</p>
+<p><strong>Route:</strong> <code>/operation/manufacturing/production</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Production", "task": "Search production records", "action": "search", "roles": [], "route": "/operation/manufacturing/production", "screenshots": ["screenshots/operation/production.png", "screenshots/operation/production_show.png"], "keywords": ["production", "manufacturing", "filter"], "task_order": 1} -->
+<h4>Task: Search production records</h4>
+<p><strong>Purpose:</strong> To find specific production records by branch and date.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is authorized to view Manufacturing data.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Manufacturing &gt; Production.</li>
+<li>Select the Branch Name.</li>
+<li>Enter or select the Form Date and To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> The specific branch to filter by.</li>
+<li><strong>Form Date:</strong> Beginning of the search date range.</li>
+<li><strong>To Date:</strong> End of the search date range.</li>
+<li><strong>Production No. Search:</strong> Field to filter by a specific production number.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of production entries matching the selected criteria will be displayed in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> production, manufacturing, filter</p>
+<h3>Page: Purchase</h3>
+<p><img src="screenshots/operation/purchase.png" alt="Purchase: Screen" /></p>
+<p><img src="screenshots/operation/purchase_show.png" alt="Purchase: Show" /></p>
+<p><strong>Page purpose:</strong> This page displays purchase invoice records and allows users to manage or search for them.</p>
+<p><strong>Route:</strong> <code>/operation/purchase/purchase</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Purchase", "task": "View purchase list", "action": "view", "roles": [], "route": "/operation/purchase/purchase", "screenshots": ["screenshots/operation/purchase.png", "screenshots/operation/purchase_show.png"], "keywords": ["purchase", "invoice", "procurement"], "task_order": 1} -->
+<h4>Task: View purchase list</h4>
+<p><strong>Purpose:</strong> To review existing purchase invoices for a specific branch and time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have access to the Purchase module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Purchase &gt; Purchase.</li>
+<li>Select the branch from the Select Branch field.</li>
+<li>Set the Enter From Date and Enter To Date.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> The operational branch to view.</li>
+<li><strong>Enter From Date:</strong> Start of the date filter.</li>
+<li><strong>Enter To Date:</strong> End of the date filter.</li>
+<li><strong>BOE, BIN, Supplier Search:</strong> Search input for specific invoices or suppliers.</li>
+</ul>
+<p><strong>Expected result:</strong> The purchase invoice table is populated with records matching the criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> purchase, invoice, procurement</p>
+<h3>Page: Purchase</h3>
+<p><img src="screenshots/operation/sales.png" alt="Sales: Screen" /></p>
+<p><img src="screenshots/operation/sales_show.png" alt="Sales: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/operation/sales</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Purchase", "task": "Use Purchase", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/operation/sales", "screenshots": ["screenshots/operation/sales.png", "screenshots/operation/sales_show.png"], "keywords": ["Purchase", "sales"], "task_order": 1} -->
+<h4>Task: Use Purchase</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Purchase page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+<li><strong>BOE, BIN, Supplier Search:</strong> Visible text control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Purchase, sales</p>
+<h3>Page: Sales Invoice</h3>
+<p><img src="screenshots/operation/sales_invoice.png" alt="Sales Invoice: Screen" /></p>
+<p><img src="screenshots/operation/sales_invoice_show.png" alt="Sales Invoice: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a search and display interface for all sales invoices recorded in the system.</p>
+<p><strong>Route:</strong> <code>/operation/sales/salesInvoice</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "Search sales invoices", "action": "search", "roles": [], "route": "/operation/sales/salesInvoice", "screenshots": ["screenshots/operation/sales_invoice.png", "screenshots/operation/sales_invoice_show.png"], "keywords": ["sales", "invoice", "billing"], "task_order": 1} -->
+<h4>Task: Search sales invoices</h4>
+<p><strong>Purpose:</strong> To locate specific sales invoice records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to Sales module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Sales &gt; Sales Invoice.</li>
+<li>Select a branch in the Select Branch field.</li>
+<li>Define the period using the From Date and To Date pickers.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Filtering by branch.</li>
+<li><strong>From Date:</strong> Beginning of the invoice date range.</li>
+<li><strong>To Date:</strong> End of the invoice date range.</li>
+<li><strong>BOE, BIN, Inv No Search:</strong> Find specific invoices by reference.</li>
+</ul>
+<p><strong>Expected result:</strong> Relevant sales invoices are shown in the table below.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales, invoice, billing</p>
+<h3>Page: Transfer In</h3>
+<p><img src="screenshots/operation/transfer_in.png" alt="Transfer In: Screen" /></p>
+<p><img src="screenshots/operation/transfer_in_show.png" alt="Transfer In: Show" /></p>
+<p><strong>Page purpose:</strong> This page lists inventory items that have been transferred into the branch.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/transferIn</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer In", "task": "Filter transfer-in records", "action": "filter", "roles": [], "route": "/operation/inventoryTransaction/transferIn", "screenshots": ["screenshots/operation/transfer_in.png", "screenshots/operation/transfer_in_show.png"], "keywords": ["transfer", "inventory", "stock"], "task_order": 1} -->
+<h4>Task: Filter transfer-in records</h4>
+<p><strong>Purpose:</strong> To narrow down inventory transfers into the branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to Inventory Transaction.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Transfer In.</li>
+<li>Select the Branch Name.</li>
+<li>Select the Item Type.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> The target branch for the transfer-in.</li>
+<li><strong>Item Type:</strong> Category of the inventory being transferred.</li>
+<li><strong>Transfer-In No Search:</strong> Search by transfer number.</li>
+</ul>
+<p><strong>Expected result:</strong> Inventory Transfer-In records matching the selection are displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> transfer, inventory, stock</p>
+<h3>Page: Transfer Out</h3>
+<p><img src="screenshots/operation/transfer_out.png" alt="Transfer Out: Screen" /></p>
+<p><img src="screenshots/operation/transfer_out_show.png" alt="Transfer Out: Show" /></p>
+<p><strong>Page purpose:</strong> This page displays details of inventory transferred out from the current branch to another destination.</p>
+<p><strong>Route:</strong> <code>/operation/inventoryTransaction/transferOut</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Transfer Out", "task": "View transfer-out details", "action": "view", "roles": [], "route": "/operation/inventoryTransaction/transferOut", "screenshots": ["screenshots/operation/transfer_out.png", "screenshots/operation/transfer_out_show.png"], "keywords": ["transfer", "outbound", "stock"], "task_order": 1} -->
+<h4>Task: View transfer-out details</h4>
+<p><strong>Purpose:</strong> To review the history and details of outgoing inventory transfers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Inventory Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Inventory Transaction &gt; Transfer Out.</li>
+<li>Select the Branch Name.</li>
+<li>Select the Item Type.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Source branch of the items.</li>
+<li><strong>Item Type:</strong> The type of inventory items.</li>
+<li><strong>Transfer No Search:</strong> Search by specific transfer record number.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing transfers to other locations including destination, address, vehicle info, and date.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> transfer, outbound, stock</p>
+<h3>Page: Wastage In</h3>
+<p><img src="screenshots/operation/wastage_in.png" alt="Wastage In: Screen" /></p>
+<p><img src="screenshots/operation/wastage_in_show.png" alt="Wastage In: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view records of wastage brought into the facility.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/wastageIn</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Wastage In", "task": "Search wastage in records", "action": "search", "roles": [], "route": "/operation/wastageManagement/wastageIn", "screenshots": ["screenshots/operation/wastage_in.png", "screenshots/operation/wastage_in_show.png"], "keywords": ["wastage", "waste", "management"], "task_order": 1} -->
+<h4>Task: Search wastage in records</h4>
+<p><strong>Purpose:</strong> To review records of incoming waste items.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Wastage Management module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Wastage In.</li>
+<li>Select the Branch.</li>
+<li>Specify the date range in From Date and To Date.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> The branch where the wastage was received.</li>
+<li><strong>From Date:</strong> Beginning of the record search period.</li>
+<li><strong>To Date:</strong> End of the record search period.</li>
+</ul>
+<p><strong>Expected result:</strong> Records of incoming wastage items are displayed in the list.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, waste, management</p>
+<h3>Page: Sales Invoice</h3>
+<p><img src="screenshots/operation/wastage_management.png" alt="Wastage Management: Screen" /></p>
+<p><img src="screenshots/operation/wastage_management_show.png" alt="Wastage Management: Show" /></p>
+<p><strong>Page purpose:</strong> Used to view and manage sales invoices under the wastage management module.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "View Sales Invoices", "action": "view", "roles": [], "route": "/operation/wastageManagement", "screenshots": ["screenshots/operation/wastage_management.png", "screenshots/operation/wastage_management_show.png"], "keywords": ["sales", "invoice", "list", "view"], "task_order": 1} -->
+<h4>Task: View Sales Invoices</h4>
+<p><strong>Purpose:</strong> To list and review sales invoices within a specific date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Operation module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management</li>
+<li>Select a branch from the Select Branch dropdown</li>
+<li>Enter or select the From Date</li>
+<li>Enter or select the To Date</li>
+<li>Click the View button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to filter by business branch.</li>
+<li><strong>Enter From Date:</strong> Start date for the invoice search.</li>
+<li><strong>Enter To Date:</strong> End date for the invoice search.</li>
+</ul>
+<p><strong>Expected result:</strong> A table list of sales invoices matching the criteria will appear.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales, invoice, list, view</p>
+<!-- manual-meta: {"module": "Operation", "page": "Sales Invoice", "task": "Search Sales Invoices", "action": "search", "roles": [], "route": "/operation/wastageManagement", "screenshots": ["screenshots/operation/wastage_management.png", "screenshots/operation/wastage_management_show.png"], "keywords": ["search", "find", "BOE", "BIN"], "task_order": 2} -->
+<h4>Task: Search Sales Invoices</h4>
+<p><strong>Purpose:</strong> To find specific sales invoices using invoice identifiers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has access to the Operation module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management</li>
+<li>Enter a BOE, BIN, or Invoice Number in the search field</li>
+<li>Click the search icon</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>BOE, BIN, Inv No Search:</strong> Search input for specific document numbers.</li>
+</ul>
+<p><strong>Expected result:</strong> The table will update to show the matching invoice record.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> search, find, BOE, BIN</p>
+<h3>Page: Wastage Sales</h3>
+<p><img src="screenshots/operation/wastage_sales.png" alt="Wastage Sales: Screen" /></p>
+<p><img src="screenshots/operation/wastage_sales_show.png" alt="Wastage Sales: Show" /></p>
+<p><strong>Page purpose:</strong> Used to view and manage sales invoices related to wastage operations.</p>
+<p><strong>Route:</strong> <code>/operation/wastageManagement/wastageSalesInvoice</code></p>
+<!-- manual-meta: {"module": "Operation", "page": "Wastage Sales", "task": "View Wastage Sales", "action": "view", "roles": [], "route": "/operation/wastageManagement/wastageSalesInvoice", "screenshots": ["screenshots/operation/wastage_sales.png", "screenshots/operation/wastage_sales_show.png"], "keywords": ["wastage", "sales", "report"], "task_order": 1} -->
+<h4>Task: View Wastage Sales</h4>
+<p><strong>Purpose:</strong> To view the list of wastage sales records for a selected branch and period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is logged in</li>
+<li>Access to wastage sales module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Operation &gt; Wastage Management &gt; Wastage Sales</li>
+<li>Select the branch</li>
+<li>Select the date range using From Date and To Date fields</li>
+<li>Click the View button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Branch selector.</li>
+<li><strong>Enter From Date:</strong> Beginning of the reporting period.</li>
+<li><strong>Enter To Date:</strong> End of the reporting period.</li>
+</ul>
+<p><strong>Expected result:</strong> The wastage sales table will be populated with invoice data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> wastage, sales, report</p>
+<h2 id="4-reports-module">4. Reports Module</h2>
+<h3>Page: Audit Report</h3>
+<p><img src="screenshots/reports/audit_report.png" alt="Audit Report: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides a centralized hub to access various import, purchase, sales, and export audit data records.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/auditReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Audit Report", "task": "View audit report categories", "action": "view", "roles": [], "route": "/reports/otherReports/auditReport", "screenshots": ["screenshots/reports/audit_report.png"], "keywords": ["audit", "import", "purchase", "sales", "export"], "task_order": 1} -->
+<h4>Task: View audit report categories</h4>
+<p><strong>Purpose:</strong> To navigate to specific audit report areas including Imports, Local Purchases, Local Sales, and Exports.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Reports module</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Reports module in the sidebar.</li>
+<li>Select 'Audit Report' from the MIS Report list.</li>
+<li>Click on the desired category button (Import, Local Purchase, Local Sales, or Export) to view associated reports.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The user is directed to the relevant audit report dashboard based on the selected category.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> audit, import, purchase, sales, export</p>
+<h3>Page: Chok Ka/Kha Report</h3>
+<p><img src="screenshots/reports/chok_ka_kha.png" alt="Chok Ka Kha: Screen" /></p>
+<p><img src="screenshots/reports/chok_ka_kha_show.png" alt="Chok Ka Kha: Show" /></p>
+<p><strong>Page purpose:</strong> This report displays financial data for Chok Ka and Chok Kha forms for a specified branch and date range.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/chok-ka/kha</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Chok Ka/Kha Report", "task": "Filter Chok Ka/Kha records", "action": "filter", "roles": [], "route": "/reports/otherReports/chok-ka/kha", "screenshots": ["screenshots/reports/chok_ka_kha.png", "screenshots/reports/chok_ka_kha_show.png"], "keywords": ["chok ka", "chok kha", "financial report", "vat form"], "task_order": 1} -->
+<h4>Task: Filter Chok Ka/Kha records</h4>
+<p><strong>Purpose:</strong> To retrieve specific financial records for a given branch and time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have access to the MIS Reports section.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to 'Chok Ka/Kha' under the MIS Report section.</li>
+<li>Select the desired branch from the 'Branch' dropdown.</li>
+<li>Enter or select the 'From Date' and 'To Date'.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Dropdown to select the organization branch.</li>
+<li><strong>From Date:</strong> Date picker for the start of the report period.</li>
+<li><strong>To Date:</strong> Date picker for the end of the report period.</li>
+</ul>
+<p><strong>Expected result:</strong> The report displays data if found, or displays a 'No Data Found' warning if the selection criteria yield no results.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> chok ka, chok kha, financial report, vat form</p>
+<h3>Page: Credit Note Report</h3>
+<p><img src="screenshots/reports/credit_note_report.png" alt="Credit Note Report: Screen" /></p>
+<p><img src="screenshots/reports/credit_note_report_show.png" alt="Credit Note Report: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view a list of credit notes issued to partners within a specific branch and time frame.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/creditNoteReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Credit Note Report", "task": "Search credit note records", "action": "search", "roles": [], "route": "/reports/otherReports/creditNoteReport", "screenshots": ["screenshots/reports/credit_note_report.png", "screenshots/reports/credit_note_report_show.png"], "keywords": ["credit note", "invoice", "vat correction"], "task_order": 1} -->
+<h4>Task: Search credit note records</h4>
+<p><strong>Purpose:</strong> To view credit notes for specific branches and date ranges.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Authorized access to reports.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select 'Credit Note Report' from the sidebar.</li>
+<li>Select the 'Branch Name'.</li>
+<li>Define the 'From Date' and 'To Date'.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> The branch context for the credit notes.</li>
+<li><strong>From Date:</strong> Start date for transaction filtering.</li>
+<li><strong>To Date:</strong> End date for transaction filtering.</li>
+</ul>
+<p><strong>Expected result:</strong> A table populated with credit note details such as Partner, Invoice, Fiscal Year, and Transaction Date appears below the search form.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> credit note, invoice, vat correction</p>
+<h3>Page: Debit Note Report</h3>
+<p><img src="screenshots/reports/debit_note_report.png" alt="Debit Note Report: Screen" /></p>
+<p><img src="screenshots/reports/debit_note_report_show.png" alt="Debit Note Report: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a filtered view of debit notes issued, enabling users to verify transaction history.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/debitNoteReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Debit Note Report", "task": "View debit note report", "action": "view", "roles": [], "route": "/reports/otherReports/debitNoteReport", "screenshots": ["screenshots/reports/debit_note_report.png", "screenshots/reports/debit_note_report_show.png"], "keywords": ["debit note", "transaction history"], "task_order": 1} -->
+<h4>Task: View debit note report</h4>
+<p><strong>Purpose:</strong> To extract and verify debit note information for accounting purposes.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have navigate access to the MIS reports.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select 'Debit Note Report' from the navigation menu.</li>
+<li>Choose a 'Branch Name'.</li>
+<li>Specify the date range using 'From Date' and 'To Date'.</li>
+<li>Click 'View' to trigger the data pull.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch Name:</strong> Identifier for the business entity branch.</li>
+<li><strong>From Date:</strong> The date from which to start the report.</li>
+<li><strong>To Date:</strong> The date at which the report ends.</li>
+</ul>
+<p><strong>Expected result:</strong> A populated report table including SL, Branch Name, Partner, Invoice, Fiscal Year, and Transaction Date.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> debit note, transaction history</p>
+<h3>Page: Doc Verification System (DVS)</h3>
+<p><img src="screenshots/reports/doc_verification_system_dvs.png" alt="Doc Verification System Dvs: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to access the Document Verification System for validating financial and tax-related documents.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/docVerificationSystem(DVS)</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Doc Verification System (DVS)", "task": "Access DVS portal", "action": "view", "roles": [], "route": "/reports/otherReports/docVerificationSystem(DVS)", "screenshots": ["screenshots/reports/doc_verification_system_dvs.png"], "keywords": ["dvs", "verification", "document check"], "task_order": 1} -->
+<h4>Task: Access DVS portal</h4>
+<p><strong>Purpose:</strong> To verify system documentation as required by VAT regulations.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Active session with DVS permissions.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Reports module.</li>
+<li>Select 'Doc Verification System (DVS)' from the list.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The screen loads the Doc Verification System interface.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> dvs, verification, document check</p>
+<h3>Page: HSCode Wise Sales &amp; VAT</h3>
+<p><img src="screenshots/reports/hscode_wise_sales_vat.png" alt="Hscode Wise Sales Vat: Screen" /></p>
+<p><img src="screenshots/reports/hscode_wise_sales_vat_show.png" alt="Hscode Wise Sales Vat: Show" /></p>
+<p><strong>Page purpose:</strong> This report provides a breakdown of sales quantity and VAT information categorized by HS Code and item.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/hsCodeVatSummary</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "HSCode Wise Sales & VAT", "task": "Filter HSCode VAT sales summary", "action": "filter", "roles": [], "route": "/reports/otherReports/hsCodeVatSummary", "screenshots": ["screenshots/reports/hscode_wise_sales_vat.png", "screenshots/reports/hscode_wise_sales_vat_show.png"], "keywords": ["hs code", "vat", "sales summary", "item code"], "task_order": 1} -->
+<h4>Task: Filter HSCode VAT sales summary</h4>
+<p><strong>Purpose:</strong> To analyze sales performance and VAT liability per HS Code.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must be on the 'HSCode Wise Sales &amp; Vat' page.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Set the 'From Date' and 'To Date' range.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Start of the sales data period.</li>
+<li><strong>To Date:</strong> End of the sales data period.</li>
+</ul>
+<p><strong>Expected result:</strong> The report displays data including HS Code, Item Code, Item Name, Sales Quantity, Rate, Value, and VAT figures.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> hs code, vat, sales summary, item code</p>
+<h3>Page: Inventory Reconciliation</h3>
+<p><img src="screenshots/reports/inventory_reconciliation.png" alt="Inventory Reconciliation: Screen" /></p>
+<p><strong>Page purpose:</strong> A reporting page designed to reconcile inventory counts against records to ensure accuracy.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/inventoryReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Inventory Reconciliation", "task": "Filter inventory data", "action": "filter", "roles": [], "route": "/reports/otherReports/inventoryReport", "screenshots": ["screenshots/reports/inventory_reconciliation.png"], "keywords": ["inventory", "reconciliation", "stock count"], "task_order": 1} -->
+<h4>Task: Filter inventory data</h4>
+<p><strong>Purpose:</strong> To generate an inventory reconciliation report for a specific time frame.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have access to the Inventory Reconciliation menu.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the 'View Type' from the dropdown.</li>
+<li>Input the 'From Date' and 'To Date'.</li>
+<li>Click the 'View' button to execute the search.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>View Type:</strong> Selector for the type of inventory view required.</li>
+<li><strong>From Date:</strong> Beginning of the reconciliation period.</li>
+<li><strong>To Date:</strong> Ending of the reconciliation period.</li>
+</ul>
+<p><strong>Expected result:</strong> Reconciliation data will be generated based on the chosen filters.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> inventory, reconciliation, stock count</p>
+<h3>Page: Material Issue Report</h3>
+<p><img src="screenshots/reports/material_issue_report.png" alt="Material Issue Report: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is used to report on material issuance for production or internal consumption.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/materialIssueReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Material Issue Report", "task": "Generate material issue report", "action": "view", "roles": [], "route": "/reports/otherReports/materialIssueReport", "screenshots": ["screenshots/reports/material_issue_report.png"], "keywords": ["material issue", "stock consumption", "production supply"], "task_order": 1} -->
+<h4>Task: Generate material issue report</h4>
+<p><strong>Purpose:</strong> To view records of material consumption or transfers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to MIS reports.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the 'Branch' from the dropdown.</li>
+<li>Select a 'Sort By' option if required.</li>
+<li>Enter the 'From Date' and 'To Date'.</li>
+<li>Click 'View' to load the report.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the relevant branch.</li>
+<li><strong>Sort By:</strong> Defines the sort order of the output.</li>
+<li><strong>From Date:</strong> Start date for material issues.</li>
+<li><strong>To Date:</strong> End date for material issues.</li>
+</ul>
+<p><strong>Expected result:</strong> The report displays material issue data according to the selected branch and date range.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> material issue, stock consumption, production supply</p>
+<h3>Page: Mushak 9.1 (VAT Return)</h3>
+<p><img src="screenshots/reports/mis_report.png" alt="Mis Report: Screen" /></p>
+<p><img src="screenshots/reports/mis_report_show.png" alt="Mis Report: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides the official Value Added Tax (VAT) return form for submission.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak9.1</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 9.1 (VAT Return)", "task": "View VAT Return", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak9.1", "screenshots": ["screenshots/reports/mis_report.png", "screenshots/reports/mis_report_show.png"], "keywords": ["VAT", "Return", "Mushak 9.1"], "task_order": 1} -->
+<h4>Task: View VAT Return</h4>
+<p><strong>Purpose:</strong> To review the VAT return details for a specific month.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>A valid month and year selected.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the month and year from the month field.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>mushakDate:</strong> The target month and year for the return.</li>
+</ul>
+<p><strong>Expected result:</strong> The VAT return form is populated with the corresponding data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VAT, Return, Mushak 9.1</p>
+<h3>Page: Mushak 4.3 (Price Declaration)</h3>
+<p><img src="screenshots/reports/mushak_4_3_price_declaration.png" alt="Mushak 4 3 Price Declaration: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view the price declaration details of items.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak4.3</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 4.3 (Price Declaration)", "task": "Search Items", "action": "search", "roles": [], "route": "/reports/mushakForms/mushak4.3", "screenshots": ["screenshots/reports/mushak_4_3_price_declaration.png"], "keywords": ["Price", "Declaration", "Mushak 4.3"], "task_order": 1} -->
+<h4>Task: Search Items</h4>
+<p><strong>Purpose:</strong> To quickly locate a specific item's price declaration.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the reports module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Enter the item name into the search field.</li>
+<li>View the filtered result in the table.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Name Search:</strong> Field to search for a specific item by name.</li>
+</ul>
+<p><strong>Expected result:</strong> The table updates to show items matching the search criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Price, Declaration, Mushak 4.3</p>
+<h3>Page: Mushak 4.4 (Item Destroy)</h3>
+<p><img src="screenshots/reports/mushak_4_4_item_destroy.png" alt="Mushak 4 4 Item Destroy: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is used to view details of destroyed items.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak4.4</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 4.4 (Item Destroy)", "task": "Filter Item Destruction", "action": "filter", "roles": [], "route": "/reports/mushakForms/mushak4.4", "screenshots": ["screenshots/reports/mushak_4_4_item_destroy.png"], "keywords": ["Destroy", "Mushak 4.4"], "task_order": 1} -->
+<h4>Task: Filter Item Destruction</h4>
+<p><strong>Purpose:</strong> To view item destruction records within a specific timeframe.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Records exist for the selected period.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the Branch, Item Type, and Item Name.</li>
+<li>Select the From Date and To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the branch for which data is required.</li>
+<li><strong>fromDate:</strong> Start date for the report period.</li>
+<li><strong>toDate:</strong> End date for the report period.</li>
+</ul>
+<p><strong>Expected result:</strong> Records matching the criteria are displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Destroy, Mushak 4.4</p>
+<h3>Page: Mushak 4.5 (Accident Destroy)</h3>
+<p><img src="screenshots/reports/mushak_4_5_accident_destroy.png" alt="Mushak 4 5 Accident Destroy: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is used to view items destroyed due to accidents.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak4.5</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 4.5 (Accident Destroy)", "task": "Filter Accident Destruction", "action": "filter", "roles": [], "route": "/reports/mushakForms/mushak4.5", "screenshots": ["screenshots/reports/mushak_4_5_accident_destroy.png"], "keywords": ["Accident", "Destroy", "Mushak 4.5"], "task_order": 1} -->
+<h4>Task: Filter Accident Destruction</h4>
+<p><strong>Purpose:</strong> To view records of items lost due to accidents.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Relevant accident destruction logs exist.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the Branch, Item Type, and Item Name.</li>
+<li>Select the date range using From Date and To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>fromDate:</strong> The beginning date of the range.</li>
+<li><strong>toDate:</strong> The end date of the range.</li>
+</ul>
+<p><strong>Expected result:</strong> The relevant accident destruction data is populated.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Accident, Destroy, Mushak 4.5</p>
+<h3>Page: Mushak 4.6 (Waste Disposal)</h3>
+<p><img src="screenshots/reports/mushak_4_6_waste_disposal.png" alt="Mushak 4 6 Waste Disposal: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides an overview of waste disposal records.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak4.6</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 4.6 (Waste Disposal)", "task": "View Waste Disposal Logs", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak4.6", "screenshots": ["screenshots/reports/mushak_4_6_waste_disposal.png"], "keywords": ["Waste", "Disposal", "Mushak 4.6"], "task_order": 1} -->
+<h4>Task: View Waste Disposal Logs</h4>
+<p><strong>Purpose:</strong> To review historical waste disposal data.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Waste records have been previously logged.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the report page.</li>
+<li>Review the generated table list.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>rows per page:</strong> Configures how many records show per page.</li>
+</ul>
+<p><strong>Expected result:</strong> The table shows the list of waste disposal events.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Waste, Disposal, Mushak 4.6</p>
+<h3>Page: Mushak 6.10 (P&amp;S +2 Lakh)</h3>
+<p><img src="screenshots/reports/mushak_6_10_p_s_2_lakh.png" alt="Mushak 6 10 P S 2 Lakh: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_10_p_s_2_lakh_show.png" alt="Mushak 6 10 P S 2 Lakh: Show" /></p>
+<p><strong>Page purpose:</strong> This report summarizes purchases and sales over two lakh.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.10</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.10 (P&S +2 Lakh)", "task": "Generate P&S Report", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak6.10", "screenshots": ["screenshots/reports/mushak_6_10_p_s_2_lakh.png", "screenshots/reports/mushak_6_10_p_s_2_lakh_show.png"], "keywords": ["P&S", "2 Lakh", "Mushak 6.10"], "task_order": 1} -->
+<h4>Task: Generate P&amp;S Report</h4>
+<p><strong>Purpose:</strong> To generate a report for large purchase and sales transactions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>A valid date range is selected.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the Branch.</li>
+<li>Pick the From Date and To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the branch.</li>
+</ul>
+<p><strong>Expected result:</strong> Report data is populated. If not available, an error or notification will appear.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> P&amp;S, 2 Lakh, Mushak 6.10</p>
+<h3>Page: Mushak 6.1 (Purchase Register)</h3>
+<p><img src="screenshots/reports/mushak_6_1_purchase_register.png" alt="Mushak 6 1 Purchase Register: Screen" /></p>
+<p><strong>Page purpose:</strong> This page displays the purchase register reports.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.1</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.1 (Purchase Register)", "task": "Filter Purchase Register", "action": "filter", "roles": [], "route": "/reports/mushakForms/mushak6.1", "screenshots": ["screenshots/reports/mushak_6_1_purchase_register.png"], "keywords": ["Purchase", "Register", "Mushak 6.1"], "task_order": 1} -->
+<h4>Task: Filter Purchase Register</h4>
+<p><strong>Purpose:</strong> To narrow down the purchase register data by date and type.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Available purchase data.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select Item Type and Branch.</li>
+<li>Select From Date and To Date.</li>
+<li>Select the display format (Bangla or English).</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Bangla format:</strong> Display the report in Bengali.</li>
+<li><strong>English format:</strong> Display the report in English.</li>
+</ul>
+<p><strong>Expected result:</strong> The purchase register is filtered according to the selected format and date range.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Purchase, Register, Mushak 6.1</p>
+<h3>Page: Mushak 6.2.1 (P&amp;S Register)</h3>
+<p><img src="screenshots/reports/mushak_6_2_1_p_s_register.png" alt="Mushak 6 2 1 P S Register: Screen" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view the Purchases and Sales register.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6-2-1</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.2.1 (P&S Register)", "task": "Generate P&S Register", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak6-2-1", "screenshots": ["screenshots/reports/mushak_6_2_1_p_s_register.png"], "keywords": ["P&S", "Register", "Mushak 6.2.1"], "task_order": 1} -->
+<h4>Task: Generate P&amp;S Register</h4>
+<p><strong>Purpose:</strong> To generate a comprehensive report of purchases and sales.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>A date range has been specified.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the Item Type, Branch, and Item Name.</li>
+<li>Select the report date range.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Type:</strong> Type of item.</li>
+</ul>
+<p><strong>Expected result:</strong> The P&amp;S register for the selected item and time period is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> P&amp;S, Register, Mushak 6.2.1</p>
+<h3>Page: Mushak 6.2 (Sales Register)</h3>
+<p><img src="screenshots/reports/mushak_6_2_sales_register.png" alt="Mushak 6 2 Sales Register: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides a report of sales records based on user-selected criteria.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.2</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.2 (Sales Register)", "task": "Filter and View Sales Register", "action": "filter", "roles": [], "route": "/reports/mushakForms/mushak6.2", "screenshots": ["screenshots/reports/mushak_6_2_sales_register.png"], "keywords": ["Sales report", "Sales Register", "Mushak 6.2"], "task_order": 1} -->
+<h4>Task: Filter and View Sales Register</h4>
+<p><strong>Purpose:</strong> To view a specific sales register report based on item type, branch, and date range.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Data must exist for the selected criteria.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.2 (Sales Register).</li>
+<li>Select an Item Type from the dropdown.</li>
+<li>Select a Branch.</li>
+<li>Choose a From Date and To Date using the date picker.</li>
+<li>Select a report format (Bangla or English).</li>
+<li>Click the View button to display the report.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Type:</strong> Dropdown to select the category of sales items.</li>
+<li><strong>Item:</strong> Dropdown to specify the particular item name.</li>
+<li><strong>Branch:</strong> Dropdown to select the relevant branch.</li>
+<li><strong>From Date:</strong> The start date for the sales report.</li>
+<li><strong>To Date:</strong> The end date for the sales report.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of sales records corresponding to the selected filters, or a message stating 'Sales information not available'.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>If no records are found for the selected criteria, the system will display a notification message.</li>
+</ul>
+<p><strong>Search keywords:</strong> Sales report, Sales Register, Mushak 6.2</p>
+<h3>Page: Mushak 6.3 (Sales Invoice)</h3>
+<p><img src="screenshots/reports/mushak_6_3_sales_invoice.png" alt="Mushak 6 3 Sales Invoice: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_3_sales_invoice_show.png" alt="Mushak 6 3 Sales Invoice: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to search and view sales invoice records.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.3</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.3 (Sales Invoice)", "task": "Search Sales Invoices", "action": "search", "roles": [], "route": "/reports/mushakForms/mushak6.3", "screenshots": ["screenshots/reports/mushak_6_3_sales_invoice.png", "screenshots/reports/mushak_6_3_sales_invoice_show.png"], "keywords": ["Sales Invoice", "Invoice report", "Mushak 6.3"], "task_order": 1} -->
+<h4>Task: Search Sales Invoices</h4>
+<p><strong>Purpose:</strong> To find specific sales invoices for reporting or verification.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Invoices must be generated in the system.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.3 (Sales Invoice).</li>
+<li>Select the Branch from the dropdown.</li>
+<li>Set the From Date and To Date range.</li>
+<li>Click the View button to generate the list.</li>
+<li>Use the 'BOE, BIN, Inv No Search' field to narrow results if necessary.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to select the business branch.</li>
+<li><strong>BOE, BIN, Inv No Search:</strong> Search input for filtering invoices by bill of entry, business identification number, or invoice number.</li>
+</ul>
+<p><strong>Expected result:</strong> A table populated with relevant sales invoices.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Sales Invoice, Invoice report, Mushak 6.3</p>
+<h3>Page: Mushak 6.4 (Issue MFG.)</h3>
+<p><img src="screenshots/reports/mushak_6_4_issue_mfg.png" alt="Mushak 6 4 Issue Mfg: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_4_issue_mfg_show.png" alt="Mushak 6 4 Issue Mfg: Show" /></p>
+<p><strong>Page purpose:</strong> Provides reports for contract manufacturing issue and receive transactions.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.4</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.4 (Issue MFG.)", "task": "View Contract Manufacturing Reports", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak6.4", "screenshots": ["screenshots/reports/mushak_6_4_issue_mfg.png", "screenshots/reports/mushak_6_4_issue_mfg_show.png"], "keywords": ["Manufacturing report", "Issue MFG", "Contract manufacturing"], "task_order": 1} -->
+<h4>Task: View Contract Manufacturing Reports</h4>
+<p><strong>Purpose:</strong> To report on raw materials issued or received for contract manufacturing.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Contract manufacturing transactions must have occurred.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.4 (Issue MFG.).</li>
+<li>Toggle between the 'CONTRACT MANUFACTURING ISSUE' or 'CONTRACT MANUFACTURING RECEIVE' tabs.</li>
+<li>Select the Branch, From Date, To Date, and Issue Type.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the relevant branch.</li>
+<li><strong>Issue Type:</strong> Dropdown to define the type of issuance or receipt.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing transaction details like Challan No, Supplier, Date, and Quantity.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Manufacturing report, Issue MFG, Contract manufacturing</p>
+<h3>Page: Mushak 6.5 (Stock Transfer)</h3>
+<p><img src="screenshots/reports/mushak_6_5_stock_transfer.png" alt="Mushak 6 5 Stock Transfer: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_5_stock_transfer_show.png" alt="Mushak 6 5 Stock Transfer: Show" /></p>
+<p><strong>Page purpose:</strong> Used to monitor records of stock transfers between branches or locations.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.5</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.5 (Stock Transfer)", "task": "Browse Stock Transfers", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak6.5", "screenshots": ["screenshots/reports/mushak_6_5_stock_transfer.png", "screenshots/reports/mushak_6_5_stock_transfer_show.png"], "keywords": ["Stock transfer report", "Inventory movement"], "task_order": 1} -->
+<h4>Task: Browse Stock Transfers</h4>
+<p><strong>Purpose:</strong> To verify the history of stock movements.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Stock transfer transactions must be recorded.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.5 (Stock Transfer).</li>
+<li>Select the Branch Name and Item Type.</li>
+<li>Click the View button to load the transfer records.</li>
+<li>Use the 'Transfer No Search' field to filter the table list.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Transfer No Search:</strong> Filter table by transfer identification number.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of stock transfers with details such as Transfer No, Branch, and Quantity.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Stock transfer report, Inventory movement</p>
+<h3>Page: Mushak 6.6 (VDS Certificate)</h3>
+<p><img src="screenshots/reports/mushak_6_6_vds_certificate.png" alt="Mushak 6 6 Vds Certificate: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_6_vds_certificate_show.png" alt="Mushak 6 6 Vds Certificate: Show" /></p>
+<p><strong>Page purpose:</strong> Used for reviewing VAT Deducted at Source (VDS) certificates.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.6</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.6 (VDS Certificate)", "task": "Review VDS Certificates", "action": "filter", "roles": [], "route": "/reports/mushakForms/mushak6.6", "screenshots": ["screenshots/reports/mushak_6_6_vds_certificate.png", "screenshots/reports/mushak_6_6_vds_certificate_show.png"], "keywords": ["VDS", "VAT Deducted at Source", "Certificate report"], "task_order": 1} -->
+<h4>Task: Review VDS Certificates</h4>
+<p><strong>Purpose:</strong> To audit and view the status of VDS certificates.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>VDS entries must exist in the system.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.6 (VDS Certificate).</li>
+<li>Select the Report Type (e.g., VDS Certificate Issue) and the Branch.</li>
+<li>Enter the date range.</li>
+<li>Select a status filter: All, Pending, or Complete.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Report Type:</strong> Dropdown to select certificate type.</li>
+<li><strong>Status Filter:</strong> Radio buttons to filter by certificate completion status (All, Pending, Complete).</li>
+</ul>
+<p><strong>Expected result:</strong> Table showing certificates including Certificate No, Chalan No, and Deducted Amount.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, VAT Deducted at Source, Certificate report</p>
+<h3>Page: Mushak 6.7 (Credit Note)</h3>
+<p><img src="screenshots/reports/mushak_6_7_credit_note.png" alt="Mushak 6 7 Credit Note: Screen" /></p>
+<p><strong>Page purpose:</strong> Provides a report of issued credit notes.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.7</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.7 (Credit Note)", "task": "Search Credit Notes", "action": "search", "roles": [], "route": "/reports/mushakForms/mushak6.7", "screenshots": ["screenshots/reports/mushak_6_7_credit_note.png"], "keywords": ["Credit Note", "Return report"], "task_order": 1} -->
+<h4>Task: Search Credit Notes</h4>
+<p><strong>Purpose:</strong> To find and review specific credit notes.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Credit notes must have been created.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.7 (Credit Note).</li>
+<li>Select Branch and Date range.</li>
+<li>Use the 'Sales Invoice Search' box to find related notes.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Sales Invoice Search:</strong> Search input for credit notes related to specific sales invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> A table populated with credit note details.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Credit Note, Return report</p>
+<h3>Page: Mushak 6.8 (Debit Note)</h3>
+<p><img src="screenshots/reports/mushak_6_8_debit_note.png" alt="Mushak 6 8 Debit Note: Screen" /></p>
+<p><img src="screenshots/reports/mushak_6_8_debit_note_show.png" alt="Mushak 6 8 Debit Note: Show" /></p>
+<p><strong>Page purpose:</strong> Provides a report of issued debit notes.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak6.8</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 6.8 (Debit Note)", "task": "Search Debit Notes", "action": "search", "roles": [], "route": "/reports/mushakForms/mushak6.8", "screenshots": ["screenshots/reports/mushak_6_8_debit_note.png", "screenshots/reports/mushak_6_8_debit_note_show.png"], "keywords": ["Debit Note"], "task_order": 1} -->
+<h4>Task: Search Debit Notes</h4>
+<p><strong>Purpose:</strong> To find and review specific debit notes.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Debit notes must have been created.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 6.8 (Debit Note).</li>
+<li>Select the Branch Name, Form Date, and To Date.</li>
+<li>Use the 'Purchase Invoice Search' to find related notes.</li>
+<li>Click View.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Purchase Invoice Search:</strong> Search input for debit notes related to specific purchase invoices.</li>
+</ul>
+<p><strong>Expected result:</strong> A table populated with debit note details.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Debit Note</p>
+<h3>Page: Mushak 9.1 (VAT Return)</h3>
+<p><img src="screenshots/reports/mushak_9_1_vat_return.png" alt="Mushak 9 1 Vat Return: Screen" /></p>
+<p><img src="screenshots/reports/mushak_9_1_vat_return_show.png" alt="Mushak 9 1 Vat Return: Show" /></p>
+<p><strong>Page purpose:</strong> Used to generate, view, and print the official VAT Return form.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms/mushak9.1</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak 9.1 (VAT Return)", "task": "Generate VAT Return", "action": "view", "roles": [], "route": "/reports/mushakForms/mushak9.1", "screenshots": ["screenshots/reports/mushak_9_1_vat_return.png", "screenshots/reports/mushak_9_1_vat_return_show.png"], "keywords": ["VAT Return", "Mushak 9.1", "Tax return"], "task_order": 1} -->
+<h4>Task: Generate VAT Return</h4>
+<p><strong>Purpose:</strong> To view the VAT return details for a selected month.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Transactions for the period must be recorded and posted.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; Mushak Forms &gt; Mushak 9.1 (VAT Return).</li>
+<li>Select the Month/Year in the 'Year And Month' field.</li>
+<li>Click the View button to display the form.</li>
+<li>Click the Print button to output the form, or Posting to commit the return.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Year And Month:</strong> Select the period for the VAT return.</li>
+</ul>
+<p><strong>Expected result:</strong> The VAT return form is populated with the financial summary for the selected period.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VAT Return, Mushak 9.1, Tax return</p>
+<h3>Page: Mushak Forms</h3>
+<p><img src="screenshots/reports/mushak_forms.png" alt="Mushak Forms: Screen" /></p>
+<p><img src="screenshots/reports/mushak_forms_show.png" alt="Mushak Forms: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides access to various government-mandated VAT forms and registers for record-keeping and compliance reporting.</p>
+<p><strong>Route:</strong> <code>/reports/mushakForms</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Mushak Forms", "task": "View Mushak Report", "action": "view", "roles": [], "route": "/reports/mushakForms", "screenshots": ["screenshots/reports/mushak_forms.png", "screenshots/reports/mushak_forms_show.png"], "keywords": ["Mushak", "VAT form", "register", "compliance report"], "task_order": 1} -->
+<h4>Task: View Mushak Report</h4>
+<p><strong>Purpose:</strong> To generate and view specific VAT-related reports like purchase or sales registers.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must have navigation access to Reports</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Reports module</li>
+<li>Click on 'Mushak Forms' to expand the list</li>
+<li>Select the desired Mushak form (e.g., Mushak 6.2 Sales Register)</li>
+<li>Select the branch and date range as required</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to select the company branch.</li>
+<li><strong>Enter From Date:</strong> Date picker for the start of the report range.</li>
+<li><strong>Enter To Date:</strong> Date picker for the end of the report range.</li>
+</ul>
+<p><strong>Expected result:</strong> A table populated with relevant record data based on the chosen filters.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> Mushak, VAT form, register, compliance report</p>
+<h3>Page: Partner Vs Stock Report</h3>
+<p><img src="screenshots/reports/partner_vs_stock.png" alt="Partner Vs Stock: Screen" /></p>
+<p><strong>Page purpose:</strong> This report displays a comparison of stock levels relative to partners/customers.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/partnerVsStock</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Partner Vs Stock Report", "task": "View Partner Vs Stock Report", "action": "view", "roles": [], "route": "/reports/otherReports/partnerVsStock", "screenshots": ["screenshots/reports/partner_vs_stock.png"], "keywords": ["stock report", "partner inventory", "stock analysis"], "task_order": 1} -->
+<h4>Task: View Partner Vs Stock Report</h4>
+<p><strong>Purpose:</strong> To analyze stock inventory details associated with specific partners.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Active session in Prime VAT</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report</li>
+<li>Select 'Partner Vs Stock' from the left sidebar</li>
+<li>Choose a branch, customer name, and item filter</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the company branch.</li>
+<li><strong>Customer Name:</strong> Field to filter by a specific customer.</li>
+<li><strong>Item:</strong> Dropdown to select a specific stock item.</li>
+</ul>
+<p><strong>Expected result:</strong> The grid populates with item names, codes, units of measurement, price, and current stock status.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> stock report, partner inventory, stock analysis</p>
+<h3>Page: Payment Method Wise Report</h3>
+<p><img src="screenshots/reports/payment_method_wise_report.png" alt="Payment Method Wise Report: Screen" /></p>
+<p><img src="screenshots/reports/payment_method_wise_report_show.png" alt="Payment Method Wise Report: Show" /></p>
+<p><strong>Page purpose:</strong> Displays financial reports categorized by the payment methods used for transactions.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/paymentMethodWiseReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Payment Method Wise Report", "task": "View Payment Method Wise Report", "action": "view", "roles": [], "route": "/reports/otherReports/paymentMethodWiseReport", "screenshots": ["screenshots/reports/payment_method_wise_report.png", "screenshots/reports/payment_method_wise_report_show.png"], "keywords": ["payment summary", "transaction audit", "financial report"], "task_order": 1} -->
+<h4>Task: View Payment Method Wise Report</h4>
+<p><strong>Purpose:</strong> To audit and view transaction summaries based on the payment method (e.g., cash, credit, bank transfer).</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to MIS reports</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report</li>
+<li>Select 'Payment Method Wise Report'</li>
+<li>Specify Item Type, Payment Method Type, and date range</li>
+<li>Click the 'View' button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Item Type:</strong> Category of items for the report (e.g., Sales).</li>
+<li><strong>Payment Method Type:</strong> Filter by payment method or 'All'.</li>
+</ul>
+<p><strong>Expected result:</strong> A data view displaying transactions grouped by payment method.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> payment summary, transaction audit, financial report</p>
+<h3>Page: Production Report</h3>
+<p><img src="screenshots/reports/production_report.png" alt="Production Report: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/reports/otherReports/productionReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Production Report", "task": "Use Production Report", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/reports/otherReports/productionReport", "screenshots": ["screenshots/reports/production_report.png"], "keywords": ["Production Report", "production report"], "task_order": 1} -->
+<h4>Task: Use Production Report</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Production Report page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Production Report, production report</p>
+<h3>Page: Purchase Report</h3>
+<p><img src="screenshots/reports/purchase_report.png" alt="Purchase Report: Screen" /></p>
+<p><img src="screenshots/reports/purchase_report_show.png" alt="Purchase Report: Show" /></p>
+<p><strong>Page purpose:</strong> Generates a detailed report of all procurement and purchase transactions.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/purchaseReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Purchase Report", "task": "View Purchase Report", "action": "view", "roles": [], "route": "/reports/otherReports/purchaseReport", "screenshots": ["screenshots/reports/purchase_report.png", "screenshots/reports/purchase_report_show.png"], "keywords": ["procurement", "purchase audit", "vendor report"], "task_order": 1} -->
+<h4>Task: View Purchase Report</h4>
+<p><strong>Purpose:</strong> To review purchase transaction logs over a specified time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Procurement data must exist in the system</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report</li>
+<li>Select 'Purchase Report'</li>
+<li>Set the Branch, Sort By, and date range filters</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Filter for the organizational branch.</li>
+<li><strong>Sort By:</strong> Defines the sort order of the resulting report.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of purchase transactions matching the applied filters.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> procurement, purchase audit, vendor report</p>
+<h3>Page: Purchase Report by Category</h3>
+<p><img src="screenshots/reports/purchase_report_by_category.png" alt="Purchase Report By Category: Screen" /></p>
+<p><img src="screenshots/reports/purchase_report_by_category_show.png" alt="Purchase Report By Category: Show" /></p>
+<p><strong>Page purpose:</strong> Provides purchase transaction information organized by item categories.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/purchaseReportByCategory</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Purchase Report by Category", "task": "View Category-wise Purchase Report", "action": "view", "roles": [], "route": "/reports/otherReports/purchaseReportByCategory", "screenshots": ["screenshots/reports/purchase_report_by_category.png", "screenshots/reports/purchase_report_by_category_show.png"], "keywords": ["categorized purchase", "item classification", "procurement summary"], "task_order": 1} -->
+<h4>Task: View Category-wise Purchase Report</h4>
+<p><strong>Purpose:</strong> To analyze purchase volumes categorized by item groupings.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Items must be assigned to categories</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report</li>
+<li>Select 'Purchase Report by Category'</li>
+<li>Select the desired date range</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Enter From Date:</strong> Start date for report extraction.</li>
+<li><strong>Enter To Date:</strong> End date for report extraction.</li>
+</ul>
+<p><strong>Expected result:</strong> Categorized purchase transaction summaries appear on the screen.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> categorized purchase, item classification, procurement summary</p>
+<h3>Page: Purchase/Sales Details</h3>
+<p><img src="screenshots/reports/purchase_sales_details.png" alt="Purchase Sales Details: Screen" /></p>
+<p><strong>Page purpose:</strong> Offers a comprehensive view of both purchase and sales transaction details.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/purchaseSalesDetails</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Purchase/Sales Details", "task": "View Purchase and Sales Details", "action": "view", "roles": [], "route": "/reports/otherReports/purchaseSalesDetails", "screenshots": ["screenshots/reports/purchase_sales_details.png"], "keywords": ["transaction log", "audit", "detailed report"], "task_order": 1} -->
+<h4>Task: View Purchase and Sales Details</h4>
+<p><strong>Purpose:</strong> To view granular data for both sales and purchase operations in one report.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>System must contain both sales and purchase data</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report</li>
+<li>Select 'Purchase/Sales Details'</li>
+<li>Choose date range and record type (Purchase or Sales)</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Type:</strong> Toggle between Purchase or Sales view.</li>
+</ul>
+<p><strong>Expected result:</strong> A detailed table of transactions based on the selected type.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> transaction log, audit, detailed report</p>
+<h3>Page: Wastage Sales</h3>
+<p><img src="screenshots/reports/reports.png" alt="Reports: Screen" /></p>
+<p><img src="screenshots/reports/reports_show.png" alt="Reports: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/reports</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Wastage Sales", "task": "Use Wastage Sales", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/reports", "screenshots": ["screenshots/reports/reports.png", "screenshots/reports/reports_show.png"], "keywords": ["Wastage Sales", "reports"], "task_order": 1} -->
+<h4>Task: Use Wastage Sales</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the Wastage Sales page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+<li><strong>BOE, BIN, Inv No Search:</strong> Visible text control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> Wastage Sales, reports</p>
+<h3>Page: Sales &amp; Purchase Compare</h3>
+<p><img src="screenshots/reports/sales_purchase_compare.png" alt="Sales Purchase Compare: Screen" /></p>
+<p><img src="screenshots/reports/sales_purchase_compare_show.png" alt="Sales Purchase Compare: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a comparison between sales and purchase data to analyze trends or discrepancies over specific dates.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/salesAndPurchaseCompare</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Sales & Purchase Compare", "task": "View Sales & Purchase Comparison", "action": "view", "roles": [], "route": "/reports/otherReports/salesAndPurchaseCompare", "screenshots": ["screenshots/reports/sales_purchase_compare.png", "screenshots/reports/sales_purchase_compare_show.png"], "keywords": ["comparison", "sales vs purchase", "report", "analysis"], "task_order": 1} -->
+<h4>Task: View Sales &amp; Purchase Comparison</h4>
+<p><strong>Purpose:</strong> To compare the sales and purchase data between two selected dates.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Data must be available for the selected dates.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Sales &amp; Purchase Compare.</li>
+<li>Select the Branch from the dropdown.</li>
+<li>Select the Type.</li>
+<li>Select the Based On frequency (e.g., Day).</li>
+<li>Select the Purchase Compare (Date).</li>
+<li>Select the Sales Compare (Date).</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Dropdown to select the relevant branch.</li>
+<li><strong>Type:</strong> Dropdown for report type selection.</li>
+<li><strong>Based On:</strong> Dropdown for time frequency selection.</li>
+<li><strong>Purchase Compare (Date):</strong> Date picker for the purchase data start point.</li>
+<li><strong>Sales Compare (Date):</strong> Date picker for the sales data comparison point.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays a table comparing Amount, VAT, and Grand Total for both Purchase and Sales criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>If no data exists for the selected dates, a 'No data found' message will appear.</li>
+</ul>
+<p><strong>Search keywords:</strong> comparison, sales vs purchase, report, analysis</p>
+<h3>Page: Sales Report</h3>
+<p><img src="screenshots/reports/sales_report.png" alt="Sales Report: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides a detailed report of sales transactions within a specific date range.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/salesReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Sales Report", "task": "Generate Sales Report", "action": "view", "roles": [], "route": "/reports/otherReports/salesReport", "screenshots": ["screenshots/reports/sales_report.png"], "keywords": ["sales", "invoices", "transactions", "report"], "task_order": 1} -->
+<h4>Task: Generate Sales Report</h4>
+<p><strong>Purpose:</strong> To view a summary or detailed list of sales transactions for a chosen period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Sales Report.</li>
+<li>Select the Branch.</li>
+<li>Select the sorting preference in 'Sort By'.</li>
+<li>Pick the 'From Date'.</li>
+<li>Pick the 'To Date'.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Dropdown to select the branch.</li>
+<li><strong>Sort By:</strong> Criteria to sort the report data.</li>
+<li><strong>From Date:</strong> Starting date for the report range.</li>
+<li><strong>To Date:</strong> Ending date for the report range.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of sales transactions matching the specified criteria is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales, invoices, transactions, report</p>
+<h3>Page: Sales Report by Category</h3>
+<p><img src="screenshots/reports/sales_report_by_category.png" alt="Sales Report By Category: Screen" /></p>
+<p><img src="screenshots/reports/sales_report_by_category_show.png" alt="Sales Report By Category: Show" /></p>
+<p><strong>Page purpose:</strong> This page displays sales data filtered by product categories for a specific date range.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/salesReportByCategory</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Sales Report by Category", "task": "View Category-Wise Sales", "action": "view", "roles": [], "route": "/reports/otherReports/salesReportByCategory", "screenshots": ["screenshots/reports/sales_report_by_category.png", "screenshots/reports/sales_report_by_category_show.png"], "keywords": ["sales report", "category", "product group"], "task_order": 1} -->
+<h4>Task: View Category-Wise Sales</h4>
+<p><strong>Purpose:</strong> To analyze sales performance categorized by product groups.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Sales Report by Category.</li>
+<li>Select the 'Enter From Date'.</li>
+<li>Select the 'Enter To Date'.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Enter From Date:</strong> The start date for the sales category report.</li>
+<li><strong>Enter To Date:</strong> The end date for the sales category report.</li>
+</ul>
+<p><strong>Expected result:</strong> Displays a breakdown of sales figures organized by category for the selected date range.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> sales report, category, product group</p>
+<h3>Page: Sales &amp; Stock Summary</h3>
+<p><img src="screenshots/reports/sales_stock_summary.png" alt="Sales Stock Summary: Screen" /></p>
+<p><img src="screenshots/reports/sales_stock_summary_show.png" alt="Sales Stock Summary: Show" /></p>
+<p><strong>Page purpose:</strong> This page generates a combined summary report showing sales performance against current stock levels for a selected month.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/SalesStockSummary</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Sales & Stock Summary", "task": "View Sales and Stock Summary", "action": "view", "roles": [], "route": "/reports/otherReports/SalesStockSummary", "screenshots": ["screenshots/reports/sales_stock_summary.png", "screenshots/reports/sales_stock_summary_show.png"], "keywords": ["stock summary", "inventory", "sales", "monthly report"], "task_order": 1} -->
+<h4>Task: View Sales and Stock Summary</h4>
+<p><strong>Purpose:</strong> To view the correlation between purchase, sales, and closing stock for a specific month.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Sales &amp; Stock Summary.</li>
+<li>Select the Month and Year.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Month:</strong> The target month and year for the summary report.</li>
+</ul>
+<p><strong>Expected result:</strong> The system populates a report table with columns including Opening QTY, Purchase/Sales Info, and Closing Stock.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> stock summary, inventory, sales, monthly report</p>
+<h3>Page: Sales Summary Report</h3>
+<p><img src="screenshots/reports/sales_summary_report.png" alt="Sales Summary Report: Screen" /></p>
+<p><img src="screenshots/reports/sales_summary_report_show.png" alt="Sales Summary Report: Show" /></p>
+<p><strong>Page purpose:</strong> A high-level overview of sales summaries based on branch and date range.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/salesSummaryReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Sales Summary Report", "task": "Generate Sales Summary Report", "action": "view", "roles": [], "route": "/reports/otherReports/salesSummaryReport", "screenshots": ["screenshots/reports/sales_summary_report.png", "screenshots/reports/sales_summary_report_show.png"], "keywords": ["summary", "invoice list", "sales"], "task_order": 1} -->
+<h4>Task: Generate Sales Summary Report</h4>
+<p><strong>Purpose:</strong> To generate an invoice-level summary of sales transactions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Sales Summary Report.</li>
+<li>Select the branch from 'Select Branch'.</li>
+<li>Select the 'Enter From Date'.</li>
+<li>Select the 'Enter To Date'.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to select the branch.</li>
+<li><strong>Enter From Date:</strong> Start date for the summary range.</li>
+<li><strong>Enter To Date:</strong> End date for the summary range.</li>
+</ul>
+<p><strong>Expected result:</strong> A table summarizing Sales Inv No, Trade Type, Customer Name, and other transaction details.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> summary, invoice list, sales</p>
+<h3>Page: Stock Reconcile Report</h3>
+<p><img src="screenshots/reports/stock_reconsile_report.png" alt="Stock Reconsile Report: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is used for reconciling stock discrepancies.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/stockReconsileReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Stock Reconcile Report", "task": "View Stock Reconcile Report", "action": "view", "roles": [], "route": "/reports/otherReports/stockReconsileReport", "screenshots": ["screenshots/reports/stock_reconsile_report.png"], "keywords": ["reconcile", "stock", "audit"], "task_order": 1} -->
+<h4>Task: View Stock Reconcile Report</h4>
+<p><strong>Purpose:</strong> To check for differences between recorded and actual stock levels.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Stock Reconsile Report.</li>
+<li>Select the Branch.</li>
+<li>Select the From Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the branch for reconciliation.</li>
+<li><strong>From Date:</strong> Date to begin reconciliation check.</li>
+</ul>
+<p><strong>Expected result:</strong> System populates the reconciliation findings.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> reconcile, stock, audit</p>
+<h3>Page: Stock Register</h3>
+<p><img src="screenshots/reports/stock_register.png" alt="Stock Register: Screen" /></p>
+<p><img src="screenshots/reports/stock_register_show.png" alt="Stock Register: Show" /></p>
+<p><strong>Page purpose:</strong> Provides a full record of all stock movements, including opening, receipt, and issue quantities.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/stockRegister</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Stock Register", "task": "Generate Stock Register", "action": "view", "roles": [], "route": "/reports/otherReports/stockRegister", "screenshots": ["screenshots/reports/stock_register.png", "screenshots/reports/stock_register_show.png"], "keywords": ["register", "inventory", "stock level", "closing balance"], "task_order": 1} -->
+<h4>Task: Generate Stock Register</h4>
+<p><strong>Purpose:</strong> To view current and historical stock balances and closing values.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Stock Register.</li>
+<li>Select the Branch.</li>
+<li>Select the Item Type.</li>
+<li>Enter From Date.</li>
+<li>Enter To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown for branch selection.</li>
+<li><strong>Item Type:</strong> Select category of items.</li>
+<li><strong>Negative Stock:</strong> Checkbox to filter for items with negative quantities.</li>
+</ul>
+<p><strong>Expected result:</strong> A detailed table showing opening, received, issued, and closing quantities/values for items.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> register, inventory, stock level, closing balance</p>
+<!-- manual-meta: {"module": "Reports", "page": "Stock Register", "task": "Export Stock Register", "action": "export", "roles": [], "route": "/reports/otherReports/stockRegister", "screenshots": ["screenshots/reports/stock_register.png", "screenshots/reports/stock_register_show.png"], "keywords": ["download", "export", "spreadsheet"], "task_order": 2} -->
+<h4>Task: Export Stock Register</h4>
+<p><strong>Purpose:</strong> To export stock data to a spreadsheet format.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Data must be populated in the view.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Perform the view generation steps.</li>
+<li>Click the Excel Download button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> A file is downloaded to the local device containing the current stock register report.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> download, export, spreadsheet</p>
+<h3>Page: Transaction Log</h3>
+<p><img src="screenshots/reports/transaction_log.png" alt="Transaction Log: Screen" /></p>
+<p><strong>Page purpose:</strong> Displays logs of system transactions for auditing purposes.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/auditLog</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Transaction Log", "task": "View Transaction Logs", "action": "view", "roles": [], "route": "/reports/otherReports/auditLog", "screenshots": ["screenshots/reports/transaction_log.png"], "keywords": ["audit log", "history", "tracking"], "task_order": 1} -->
+<h4>Task: View Transaction Logs</h4>
+<p><strong>Purpose:</strong> To review historical transaction activity in the system.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Reports &gt; MIS Report &gt; Transaction Log.</li>
+<li>Select the View Type.</li>
+<li>Select From Date.</li>
+<li>Select To Date.</li>
+<li>Click the View button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>View Type:</strong> Select the category of log to view.</li>
+<li><strong>From Date:</strong> Starting date for the logs.</li>
+<li><strong>To Date:</strong> Ending date for the logs.</li>
+</ul>
+<p><strong>Expected result:</strong> System displays a list of transactions matching the date and type criteria.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> audit log, history, tracking</p>
+<h3>Page: Transit Report</h3>
+<p><img src="screenshots/reports/transit_report.png" alt="Transit Report: Screen" /></p>
+<p><img src="screenshots/reports/transit_report_show.png" alt="Transit Report: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a report on items currently in transit, including transfer details between branches.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/transitReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Transit Report", "task": "View Transit Report", "action": "view", "roles": [], "route": "/reports/otherReports/transitReport", "screenshots": ["screenshots/reports/transit_report.png", "screenshots/reports/transit_report_show.png"], "keywords": ["transfer", "stock movement", "transit", "branch transfer"], "task_order": 1} -->
+<h4>Task: View Transit Report</h4>
+<p><strong>Purpose:</strong> To monitor and review stock movement between different branches.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Reports module</li>
+<li>Data availability for the selected branch and date range</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Reports menu in the left sidebar.</li>
+<li>Select 'Transit Report' from the MIS Report list.</li>
+<li>Select the 'Branch' from the dropdown menu.</li>
+<li>Select the 'Item Type' from the dropdown menu.</li>
+<li>Enter the 'From Date' and 'To Date' in the respective date fields.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> Select the source or target branch for the report.</li>
+<li><strong>Item Type:</strong> The category or type of items to be reported.</li>
+<li><strong>From Date:</strong> The start date for the transit report period.</li>
+<li><strong>To Date:</strong> The end date for the transit report period.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays a table containing transfer details such as Branch Name, Transfer Date, Transfer No, Qty information, and Narration, or an 'Data Not Found' message if no records exist.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>If no matching data is found for the selected criteria, a 'Data Not Found' message will appear.</li>
+</ul>
+<p><strong>Search keywords:</strong> transfer, stock movement, transit, branch transfer</p>
+<h3>Page: Treasury Deposit Report</h3>
+<p><img src="screenshots/reports/treasury_deposit_report.png" alt="Treasury Deposit Report: Screen" /></p>
+<p><img src="screenshots/reports/treasury_deposit_report_show.png" alt="Treasury Deposit Report: Show" /></p>
+<p><strong>Page purpose:</strong> This page provides a consolidated report of treasury deposits within a specified timeframe.</p>
+<p><strong>Route:</strong> <code>/reports/otherReports/treasuryDepositReport</code></p>
+<!-- manual-meta: {"module": "Reports", "page": "Treasury Deposit Report", "task": "View Treasury Deposit Report", "action": "view", "roles": [], "route": "/reports/otherReports/treasuryDepositReport", "screenshots": ["screenshots/reports/treasury_deposit_report.png", "screenshots/reports/treasury_deposit_report_show.png"], "keywords": ["deposit", "treasury", "bank deposit"], "task_order": 1} -->
+<h4>Task: View Treasury Deposit Report</h4>
+<p><strong>Purpose:</strong> To view and verify records of deposits made to the treasury.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Reports module</li>
+<li>Data availability within the selected date range</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Reports menu in the left sidebar.</li>
+<li>Select 'Treasury Deposit Report' from the MIS Report list.</li>
+<li>Enter the 'From Date'.</li>
+<li>Enter the 'To Date'.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> The start date for the treasury deposit record search.</li>
+<li><strong>To Date:</strong> The end date for the treasury deposit record search.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays the list of treasury deposits for the selected date range, or a 'Data Not Found' message if no records are available.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>A 'Data Not Found' message indicates no treasury records exist for the specified date range.</li>
+</ul>
+<p><strong>Search keywords:</strong> deposit, treasury, bank deposit</p>
+<h2 id="5-tax-accounting-module">5. Tax Accounting Module</h2>
+<h3>Page: Adjustment Journal</h3>
+<p><img src="screenshots/tax_accounting/adjustment_journal.png" alt="Adjustment Journal: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is intended to display the Adjustment Journal records for tax accounting.</p>
+<p><strong>Route:</strong> <code>/tax-accounting/financials/adjustmentjournal</code></p>
+<!-- manual-meta: {"module": "Tax Accounting", "page": "Adjustment Journal", "task": "Access Adjustment Journal", "action": "view", "roles": [], "route": "/tax-accounting/financials/adjustmentjournal", "screenshots": ["screenshots/tax_accounting/adjustment_journal.png"], "keywords": ["journal", "adjustment", "accounting"], "task_order": 1} -->
+<h4>Task: Access Adjustment Journal</h4>
+<p><strong>Purpose:</strong> To view adjustment journal records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has a valid account</li>
+<li>User is logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Tax Accounting module</li>
+<li>Click on Financials</li>
+<li>Select Adjustment Journal</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays the adjustment journal page.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>The page currently returns a 404 error.</li>
+</ul>
+<p><strong>Search keywords:</strong> journal, adjustment, accounting</p>
+<h3>Page: Bank Journal</h3>
+<p><img src="screenshots/tax_accounting/bank_journal.png" alt="Bank Journal: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is intended to display the Bank Journal records for tax accounting.</p>
+<p><strong>Route:</strong> <code>/tax-accounting/financials/bankjournal</code></p>
+<!-- manual-meta: {"module": "Tax Accounting", "page": "Bank Journal", "task": "Access Bank Journal", "action": "view", "roles": [], "route": "/tax-accounting/financials/bankjournal", "screenshots": ["screenshots/tax_accounting/bank_journal.png"], "keywords": ["journal", "bank", "accounting"], "task_order": 1} -->
+<h4>Task: Access Bank Journal</h4>
+<p><strong>Purpose:</strong> To view bank journal records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has a valid account</li>
+<li>User is logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Tax Accounting module</li>
+<li>Click on Financials</li>
+<li>Select Bank Journal</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays the bank journal page.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>The page currently returns a 404 error.</li>
+</ul>
+<p><strong>Search keywords:</strong> journal, bank, accounting</p>
+<h3>Page: Cash Journal</h3>
+<p><img src="screenshots/tax_accounting/cash_journal.png" alt="Cash Journal: Screen" /></p>
+<p><strong>Page purpose:</strong> This page is intended to display the Cash Journal records for tax accounting.</p>
+<p><strong>Route:</strong> <code>/tax-accounting/financials/cashjournal</code></p>
+<!-- manual-meta: {"module": "Tax Accounting", "page": "Cash Journal", "task": "Access Cash Journal", "action": "view", "roles": [], "route": "/tax-accounting/financials/cashjournal", "screenshots": ["screenshots/tax_accounting/cash_journal.png"], "keywords": ["journal", "cash", "accounting"], "task_order": 1} -->
+<h4>Task: Access Cash Journal</h4>
+<p><strong>Purpose:</strong> To view cash journal records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User has a valid account</li>
+<li>User is logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to the Tax Accounting module</li>
+<li>Click on Financials</li>
+<li>Select Cash Journal</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays the cash journal page.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>The page currently returns a 404 error.</li>
+</ul>
+<p><strong>Search keywords:</strong> journal, cash, accounting</p>
+<h3>Page: Financials</h3>
+<p><img src="screenshots/tax_accounting/financials.png" alt="Financials: Screen" /></p>
+<p><img src="screenshots/tax_accounting/financials_show.png" alt="Financials: Show" /></p>
+<p><strong>Page purpose:</strong> Provides access to financial report generation, specifically the Treasury Deposit Report.</p>
+<p><strong>Route:</strong> <code>/tax-accounting/financials</code></p>
+<!-- manual-meta: {"module": "Tax Accounting", "page": "Financials", "task": "View Treasury Deposit Report", "action": "view", "roles": [], "route": "/tax-accounting/financials", "screenshots": ["screenshots/tax_accounting/financials.png", "screenshots/tax_accounting/financials_show.png"], "keywords": ["treasury", "deposit", "financial report"], "task_order": 1} -->
+<h4>Task: View Treasury Deposit Report</h4>
+<p><strong>Purpose:</strong> To retrieve and view deposit transactions within a specific date range.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is authorized to access Tax Accounting reports</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Tax Accounting in the side menu</li>
+<li>Select Financials</li>
+<li>Enter From Date</li>
+<li>Enter To Date</li>
+<li>Click the View button</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Start date for the report search.</li>
+<li><strong>To Date:</strong> End date for the report search.</li>
+</ul>
+<p><strong>Expected result:</strong> The system displays the requested report data or indicates that no data was found.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> treasury, deposit, financial report</p>
+<h3>Page: Tax Accounting</h3>
+<p><img src="screenshots/tax_accounting/tax_accounting.png" alt="Tax Accounting: Screen" /></p>
+<p><img src="screenshots/tax_accounting/tax_accounting_show.png" alt="Tax Accounting: Show" /></p>
+<p><strong>Page purpose:</strong> Landing page for the Tax Accounting module features.</p>
+<p><strong>Route:</strong> <code>/tax-accounting</code></p>
+<!-- manual-meta: {"module": "Tax Accounting", "page": "Tax Accounting", "task": "View Tax Accounting Dashboard", "action": "view", "roles": [], "route": "/tax-accounting", "screenshots": ["screenshots/tax_accounting/tax_accounting.png", "screenshots/tax_accounting/tax_accounting_show.png"], "keywords": ["tax", "accounting", "module"], "task_order": 1} -->
+<h4>Task: View Tax Accounting Dashboard</h4>
+<p><strong>Purpose:</strong> To access various tax accounting tools and sub-modules.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User is logged into the platform</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Click on Tax Accounting in the main menu</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The system expands or opens the Tax Accounting module options including Financials.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> tax, accounting, module</p>
+<h2 id="6-transaction-module">6. Transaction Module</h2>
+<h3>Page: Adjustment</h3>
+<p><img src="screenshots/transaction/adjustment.png" alt="Adjustment: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides navigation for various adjustment types within the Transaction module.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Adjustment", "task": "Navigate to adjustment sub-menus", "action": "view", "roles": [], "route": "/transaction/adjustment", "screenshots": ["screenshots/transaction/adjustment.png"], "keywords": ["adjustment", "debit note", "credit note", "VDS adjustment", "other adjustment"], "task_order": 1} -->
+<h4>Task: Navigate to adjustment sub-menus</h4>
+<p><strong>Purpose:</strong> Access specific adjustment modules like Debit Note, Credit Note, VDS, or Other Adjustment.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must be logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Click on TRANSACTION in the side menu</li>
+<li>Click on Adjustment to expand the list</li>
+<li>Select the desired adjustment sub-menu</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The application redirects to the selected adjustment page.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> adjustment, debit note, credit note, VDS adjustment, other adjustment</p>
+<h3>Page: Credit Note Adjustment</h3>
+<p><img src="screenshots/transaction/credit_note_adjustment.png" alt="Credit Note Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/credit_note_adjustment_show.png" alt="Credit Note Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> Allows users to search and view credit note adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/creditNoteAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Credit Note Adjustment", "task": "Filter and view credit note adjustments", "action": "view", "roles": [], "route": "/transaction/adjustment/creditNoteAdjustment", "screenshots": ["screenshots/transaction/credit_note_adjustment.png", "screenshots/transaction/credit_note_adjustment_show.png"], "keywords": ["credit note", "search", "filter", "view"], "task_order": 1} -->
+<h4>Task: Filter and view credit note adjustments</h4>
+<p><strong>Purpose:</strong> To locate and review specific credit note adjustments by date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Credit Note Adjustment</li>
+<li>Select a branch from the dropdown</li>
+<li>Enter the 'From Date' and 'To Date'</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> The business unit for the adjustment.</li>
+<li><strong>Enter From Date:</strong> Start date for the search range.</li>
+<li><strong>Enter To Date:</strong> End date for the search range.</li>
+<li><strong>Code Invoice Search:</strong> Search for a specific invoice code.</li>
+</ul>
+<p><strong>Expected result:</strong> A table of credit note adjustments matching the search criteria appears.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> credit note, search, filter, view</p>
+<h3>Page: Debit Note Adjustment</h3>
+<p><img src="screenshots/transaction/debit_note_adjustment.png" alt="Debit Note Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/debit_note_adjustment_show.png" alt="Debit Note Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> Management page for viewing and creating debit note adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/debitNoteAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Debit Note Adjustment", "task": "Search debit note adjustments", "action": "search", "roles": [], "route": "/transaction/adjustment/debitNoteAdjustment", "screenshots": ["screenshots/transaction/debit_note_adjustment.png", "screenshots/transaction/debit_note_adjustment_show.png"], "keywords": ["debit note", "search", "list"], "task_order": 1} -->
+<h4>Task: Search debit note adjustments</h4>
+<p><strong>Purpose:</strong> To find existing debit note records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the branch from the dropdown</li>
+<li>Set the date range</li>
+<li>Optionally enter a Debit Note Code in the search field</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Select the relevant branch.</li>
+<li><strong>Debit Note Code Search:</strong> Search by specific debit note code.</li>
+</ul>
+<p><strong>Expected result:</strong> Matching records populate the result table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> debit note, search, list</p>
+<h3>Page: Other Adjustment</h3>
+<p><img src="screenshots/transaction/other_adjustment.png" alt="Other Adjustment: Screen" /></p>
+<p><strong>Page purpose:</strong> Displays miscellaneous VAT/Tax adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/otherAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Other Adjustment", "task": "View other adjustments", "action": "view", "roles": [], "route": "/transaction/adjustment/otherAdjustment", "screenshots": ["screenshots/transaction/other_adjustment.png"], "keywords": ["other adjustment", "miscellaneous", "tax records"], "task_order": 1} -->
+<h4>Task: View other adjustments</h4>
+<p><strong>Purpose:</strong> Monitor and review various tax adjustment records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Other Adjustment</li>
+<li>Review the generated list</li>
+<li>Use pagination controls to browse records</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Adjustment Code Search:</strong> Field to filter by adjustment code.</li>
+<li><strong>rows per page:</strong> Set the number of records displayed.</li>
+</ul>
+<p><strong>Expected result:</strong> A comprehensive list of adjustments is displayed with details like purpose, type, and amount.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> other adjustment, miscellaneous, tax records</p>
+<h3>Page: User Profile</h3>
+<p><img src="screenshots/transaction/transaction.png" alt="Transaction: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/transaction</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "User Profile", "task": "Use User Profile", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/transaction", "screenshots": ["screenshots/transaction/transaction.png"], "keywords": ["User Profile", "transaction"], "task_order": 1} -->
+<h4>Task: Use User Profile</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the User Profile page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> User Profile, transaction</p>
+<h3>Page: VDS Adjustment</h3>
+<p><img src="screenshots/transaction/treasury_and_others.png" alt="Treasury And Others: Screen" /></p>
+<p><img src="screenshots/transaction/treasury_and_others_show.png" alt="Treasury And Others: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/transaction/treasuryAndOthers</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Adjustment", "task": "Use VDS Adjustment", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/transaction/treasuryAndOthers", "screenshots": ["screenshots/transaction/treasury_and_others.png", "screenshots/transaction/treasury_and_others_show.png"], "keywords": ["VDS Adjustment", "treasury and others"], "task_order": 1} -->
+<h4>Task: Use VDS Adjustment</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the VDS Adjustment page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+<li><strong>Pending:</strong> Visible radio control.</li>
+<li><strong>Complete:</strong> Visible radio control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS Adjustment, treasury and others</p>
+<h3>Page: Treasury Deposit</h3>
+<p><img src="screenshots/transaction/treasury_deposit.png" alt="Treasury Deposit: Screen" /></p>
+<p><strong>Page purpose:</strong> Manages records of treasury deposits and challan details.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/treasuryDeposit</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Treasury Deposit", "task": "Search treasury deposits", "action": "search", "roles": [], "route": "/transaction/treasuryAndOthers/treasuryDeposit", "screenshots": ["screenshots/transaction/treasury_deposit.png"], "keywords": ["treasury deposit", "challan", "search"], "task_order": 1} -->
+<h4>Task: Search treasury deposits</h4>
+<p><strong>Purpose:</strong> Locate specific treasury deposit records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Treasury and Others</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Enter the Treasury Code or Challan No in the search field</li>
+<li>Review the table results</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Tresuary Code and Challan No Search:</strong> Input for searching specific deposit codes or challans.</li>
+</ul>
+<p><strong>Expected result:</strong> Filtered table results displayed based on the search query.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> treasury deposit, challan, search</p>
+<h3>Page: Turnover Tax</h3>
+<p><img src="screenshots/transaction/turnover_tax.png" alt="Turnover Tax: Screen" /></p>
+<p><img src="screenshots/transaction/turnover_tax_show.png" alt="Turnover Tax: Show" /></p>
+<p><strong>Page purpose:</strong> Tool for viewing turnover tax-related transactions.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/turnoverTax</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Turnover Tax", "task": "Filter turnover tax transactions", "action": "filter", "roles": [], "route": "/transaction/treasuryAndOthers/turnoverTax", "screenshots": ["screenshots/transaction/turnover_tax.png", "screenshots/transaction/turnover_tax_show.png"], "keywords": ["turnover tax", "filter"], "task_order": 1} -->
+<h4>Task: Filter turnover tax transactions</h4>
+<p><strong>Purpose:</strong> Review turnover tax entries for a specific branch and time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Treasury and Others</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the branch</li>
+<li>Set the date range</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Filter by business branch.</li>
+<li><strong>Enter From Date:</strong> Start of search period.</li>
+<li><strong>Enter To Date:</strong> End of search period.</li>
+</ul>
+<p><strong>Expected result:</strong> Table displays relevant turnover tax data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> turnover tax, filter</p>
+<h3>Page: VDS Adjustment</h3>
+<p><img src="screenshots/transaction/vds_adjustment.png" alt="Vds Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/vds_adjustment_show.png" alt="Vds Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and manage adjustments related to VAT Deducted at Source (VDS).</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/vdsAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Adjustment", "task": "Filter VDS adjustments", "action": "filter", "roles": [], "route": "/transaction/adjustment/vdsAdjustment", "screenshots": ["screenshots/transaction/vds_adjustment.png", "screenshots/transaction/vds_adjustment_show.png"], "keywords": ["VDS", "Adjustment", "Filter", "Search", "VAT"], "task_order": 1} -->
+<h4>Task: Filter VDS adjustments</h4>
+<p><strong>Purpose:</strong> To find specific VDS adjustment records based on branch, date range, and status.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Transaction &gt; Adjustment &gt; VDS Adjustment.</li>
+<li>Select the 'Select Branch' from the dropdown menu.</li>
+<li>Enter the date range using 'Enter From Date' and 'Enter To Date'.</li>
+<li>Select a status: 'Pending' or 'Complete'.</li>
+<li>Click the 'View' button to display the filtered records.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to select the company branch.</li>
+<li><strong>Enter From Date:</strong> Start date for the filter.</li>
+<li><strong>Enter To Date:</strong> End date for the filter.</li>
+<li><strong>Pending:</strong> Radio button to filter records with pending status.</li>
+<li><strong>Complete:</strong> Radio button to filter records with completed status.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of VDS adjustment records matching the specified criteria will appear in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, Adjustment, Filter, Search, VAT</p>
+<h3>Page: VDS Certificate (Issue)</h3>
+<p><img src="screenshots/transaction/vds_certificate_issue.png" alt="Vds Certificate Issue: Screen" /></p>
+<p><img src="screenshots/transaction/vds_certificate_issue_show.png" alt="Vds Certificate Issue: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view issued VAT Deduct at Source (VDS) certificates.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/varDeductatSource</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Certificate (Issue)", "task": "View VDS certificates", "action": "view", "roles": [], "route": "/transaction/treasuryAndOthers/varDeductatSource", "screenshots": ["screenshots/transaction/vds_certificate_issue.png", "screenshots/transaction/vds_certificate_issue_show.png"], "keywords": ["VDS", "Certificate", "Issue", "Deduct", "VAT"], "task_order": 1} -->
+<h4>Task: View VDS certificates</h4>
+<p><strong>Purpose:</strong> To view and track issued VDS certificates for a specific period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Transaction &gt; Treasury And Others &gt; VDS Certificate (Issue).</li>
+<li>Select the branch from 'Select Branch'.</li>
+<li>Specify the date range using 'Enter From Date' and 'Enter To Date'.</li>
+<li>Choose a status: 'All', 'Pending', or 'Complete'.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown for branch selection.</li>
+<li><strong>Enter From Date:</strong> Start date for the period.</li>
+<li><strong>Enter To Date:</strong> End date for the period.</li>
+<li><strong>All:</strong> Filter by all certificate statuses.</li>
+<li><strong>Pending:</strong> Filter by pending certificate status.</li>
+<li><strong>Complete:</strong> Filter by completed certificate status.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing details like Purchase Date, Supplier Name, Certificate No, Chalan No, and Deducted Amount will be generated.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, Certificate, Issue, Deduct, VAT</p>
+
+</body></html>

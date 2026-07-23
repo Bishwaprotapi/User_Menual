@@ -1,0 +1,364 @@
+<!doctype html><html><head><meta charset="utf-8">
+<base href="file:///D:/User_Menual/projects/iprimevatmanual/">
+<title>User Manual</title><style>
+body { font-family: -apple-system, Segoe UI, Arial, sans-serif; color: #1f2430; line-height: 1.5; }
+.cover { height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; page-break-after: always; }
+.cover h1 { font-size: 40px; margin-bottom: 8px; }
+.cover p { color: #667; }
+nav.toc { page-break-after: always; }
+nav.toc h2 { font-size: 22px; }
+nav.toc ul { list-style: none; padding-left: 0; }
+nav.toc li { margin: 6px 0; }
+nav.toc a { color: #1a4fd6; text-decoration: none; }
+h2 { font-size: 24px; border-bottom: 2px solid #ddd; padding-bottom: 6px; margin-top: 40px; page-break-before: always; }
+h3 { font-size: 19px; color: #17305a; margin-top: 30px; }
+h4 { font-size: 17px; color: #17305a; margin-top: 28px; }
+img { max-width: 100%; border: 1px solid #ddd; border-radius: 4px; margin: 10px 0; }
+table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; font-size: 13px; }
+code { background: #f2f2f2; padding: 1px 4px; border-radius: 3px; }
+</style></head><body>
+<div class="cover"><h1>User Manual</h1><p>Transaction module reference</p></div>
+<nav class="toc"><h2>Table of Contents</h2><ul></ul></nav>
+<h3>Page: Adjustment</h3>
+<p><img src="screenshots/transaction/adjustment.png" alt="Adjustment: Screen" /></p>
+<p><strong>Page purpose:</strong> This page provides navigation for various adjustment types within the Transaction module.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Adjustment", "task": "Navigate to adjustment sub-menus", "action": "view", "roles": [], "route": "/transaction/adjustment", "screenshots": ["screenshots/transaction/adjustment.png"], "keywords": ["adjustment", "debit note", "credit note", "VDS adjustment", "other adjustment"], "task_order": 1} -->
+<h4>Task: Navigate to adjustment sub-menus</h4>
+<p><strong>Purpose:</strong> Access specific adjustment modules like Debit Note, Credit Note, VDS, or Other Adjustment.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>User must be logged in</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Click on TRANSACTION in the side menu</li>
+<li>Click on Adjustment to expand the list</li>
+<li>Select the desired adjustment sub-menu</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The application redirects to the selected adjustment page.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> adjustment, debit note, credit note, VDS adjustment, other adjustment</p>
+<h3>Page: Credit Note Adjustment</h3>
+<p><img src="screenshots/transaction/credit_note_adjustment.png" alt="Credit Note Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/credit_note_adjustment_show.png" alt="Credit Note Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> Allows users to search and view credit note adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/creditNoteAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Credit Note Adjustment", "task": "Filter and view credit note adjustments", "action": "view", "roles": [], "route": "/transaction/adjustment/creditNoteAdjustment", "screenshots": ["screenshots/transaction/credit_note_adjustment.png", "screenshots/transaction/credit_note_adjustment_show.png"], "keywords": ["credit note", "search", "filter", "view"], "task_order": 1} -->
+<h4>Task: Filter and view credit note adjustments</h4>
+<p><strong>Purpose:</strong> To locate and review specific credit note adjustments by date range and branch.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Credit Note Adjustment</li>
+<li>Select a branch from the dropdown</li>
+<li>Enter the 'From Date' and 'To Date'</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Branch:</strong> The business unit for the adjustment.</li>
+<li><strong>Enter From Date:</strong> Start date for the search range.</li>
+<li><strong>Enter To Date:</strong> End date for the search range.</li>
+<li><strong>Code Invoice Search:</strong> Search for a specific invoice code.</li>
+</ul>
+<p><strong>Expected result:</strong> A table of credit note adjustments matching the search criteria appears.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> credit note, search, filter, view</p>
+<h3>Page: Debit Note Adjustment</h3>
+<p><img src="screenshots/transaction/debit_note_adjustment.png" alt="Debit Note Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/debit_note_adjustment_show.png" alt="Debit Note Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> Management page for viewing and creating debit note adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/debitNoteAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Debit Note Adjustment", "task": "Search debit note adjustments", "action": "search", "roles": [], "route": "/transaction/adjustment/debitNoteAdjustment", "screenshots": ["screenshots/transaction/debit_note_adjustment.png", "screenshots/transaction/debit_note_adjustment_show.png"], "keywords": ["debit note", "search", "list"], "task_order": 1} -->
+<h4>Task: Search debit note adjustments</h4>
+<p><strong>Purpose:</strong> To find existing debit note records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the branch from the dropdown</li>
+<li>Set the date range</li>
+<li>Optionally enter a Debit Note Code in the search field</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Select the relevant branch.</li>
+<li><strong>Debit Note Code Search:</strong> Search by specific debit note code.</li>
+</ul>
+<p><strong>Expected result:</strong> Matching records populate the result table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> debit note, search, list</p>
+<h3>Page: Other Adjustment</h3>
+<p><img src="screenshots/transaction/other_adjustment.png" alt="Other Adjustment: Screen" /></p>
+<p><strong>Page purpose:</strong> Displays miscellaneous VAT/Tax adjustments.</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/otherAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Other Adjustment", "task": "View other adjustments", "action": "view", "roles": [], "route": "/transaction/adjustment/otherAdjustment", "screenshots": ["screenshots/transaction/other_adjustment.png"], "keywords": ["other adjustment", "miscellaneous", "tax records"], "task_order": 1} -->
+<h4>Task: View other adjustments</h4>
+<p><strong>Purpose:</strong> Monitor and review various tax adjustment records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Transaction/Adjustment</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Other Adjustment</li>
+<li>Review the generated list</li>
+<li>Use pagination controls to browse records</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Adjustment Code Search:</strong> Field to filter by adjustment code.</li>
+<li><strong>rows per page:</strong> Set the number of records displayed.</li>
+</ul>
+<p><strong>Expected result:</strong> A comprehensive list of adjustments is displayed with details like purpose, type, and amount.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> other adjustment, miscellaneous, tax records</p>
+<h3>Page: User Profile</h3>
+<p><img src="screenshots/transaction/transaction.png" alt="Transaction: Screen" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/transaction</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "User Profile", "task": "Use User Profile", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/transaction", "screenshots": ["screenshots/transaction/transaction.png"], "keywords": ["User Profile", "transaction"], "task_order": 1} -->
+<h4>Task: Use User Profile</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the User Profile page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li>No specific fields were identified from the available evidence.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> User Profile, transaction</p>
+<h3>Page: VDS Adjustment</h3>
+<p><img src="screenshots/transaction/treasury_and_others.png" alt="Treasury And Others: Screen" /></p>
+<p><img src="screenshots/transaction/treasury_and_others_show.png" alt="Treasury And Others: Show" /></p>
+<p><strong>Page purpose:</strong> This page contains the controls and information shown in the captured interface.</p>
+<p><strong>Route:</strong> <code>https://devprimevat.ibos.io/transaction/treasuryAndOthers</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Adjustment", "task": "Use VDS Adjustment", "action": "view", "roles": [], "route": "https://devprimevat.ibos.io/transaction/treasuryAndOthers", "screenshots": ["screenshots/transaction/treasury_and_others.png", "screenshots/transaction/treasury_and_others_show.png"], "keywords": ["VDS Adjustment", "treasury and others"], "task_order": 1} -->
+<h4>Task: Use VDS Adjustment</h4>
+<p><strong>Purpose:</strong> Review and use the visible page functions.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>None identified from the interface</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Open the VDS Adjustment page.</li>
+<li>Review the visible controls, fields, and table columns.</li>
+<li>Choose the required available action for your work.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>From Date:</strong> Visible date control.</li>
+<li><strong>To Date:</strong> Visible date control.</li>
+<li><strong>Pending:</strong> Visible radio control.</li>
+<li><strong>Complete:</strong> Visible radio control.</li>
+</ul>
+<p><strong>Expected result:</strong> The requested page information or form is displayed.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>Only actions visible in the captured interface are documented.</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS Adjustment, treasury and others</p>
+<h3>Page: Treasury Deposit</h3>
+<p><img src="screenshots/transaction/treasury_deposit.png" alt="Treasury Deposit: Screen" /></p>
+<p><strong>Page purpose:</strong> Manages records of treasury deposits and challan details.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/treasuryDeposit</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Treasury Deposit", "task": "Search treasury deposits", "action": "search", "roles": [], "route": "/transaction/treasuryAndOthers/treasuryDeposit", "screenshots": ["screenshots/transaction/treasury_deposit.png"], "keywords": ["treasury deposit", "challan", "search"], "task_order": 1} -->
+<h4>Task: Search treasury deposits</h4>
+<p><strong>Purpose:</strong> Locate specific treasury deposit records.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Treasury and Others</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Enter the Treasury Code or Challan No in the search field</li>
+<li>Review the table results</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Tresuary Code and Challan No Search:</strong> Input for searching specific deposit codes or challans.</li>
+</ul>
+<p><strong>Expected result:</strong> Filtered table results displayed based on the search query.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> treasury deposit, challan, search</p>
+<h3>Page: Turnover Tax</h3>
+<p><img src="screenshots/transaction/turnover_tax.png" alt="Turnover Tax: Screen" /></p>
+<p><img src="screenshots/transaction/turnover_tax_show.png" alt="Turnover Tax: Show" /></p>
+<p><strong>Page purpose:</strong> Tool for viewing turnover tax-related transactions.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/turnoverTax</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "Turnover Tax", "task": "Filter turnover tax transactions", "action": "filter", "roles": [], "route": "/transaction/treasuryAndOthers/turnoverTax", "screenshots": ["screenshots/transaction/turnover_tax.png", "screenshots/transaction/turnover_tax_show.png"], "keywords": ["turnover tax", "filter"], "task_order": 1} -->
+<h4>Task: Filter turnover tax transactions</h4>
+<p><strong>Purpose:</strong> Review turnover tax entries for a specific branch and time period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to Treasury and Others</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Select the branch</li>
+<li>Set the date range</li>
+<li>Click 'View'</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Filter by business branch.</li>
+<li><strong>Enter From Date:</strong> Start of search period.</li>
+<li><strong>Enter To Date:</strong> End of search period.</li>
+</ul>
+<p><strong>Expected result:</strong> Table displays relevant turnover tax data.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> turnover tax, filter</p>
+<h3>Page: VDS Adjustment</h3>
+<p><img src="screenshots/transaction/vds_adjustment.png" alt="Vds Adjustment: Screen" /></p>
+<p><img src="screenshots/transaction/vds_adjustment_show.png" alt="Vds Adjustment: Show" /></p>
+<p><strong>Page purpose:</strong> This page allows users to view and manage adjustments related to VAT Deducted at Source (VDS).</p>
+<p><strong>Route:</strong> <code>/transaction/adjustment/vdsAdjustment</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Adjustment", "task": "Filter VDS adjustments", "action": "filter", "roles": [], "route": "/transaction/adjustment/vdsAdjustment", "screenshots": ["screenshots/transaction/vds_adjustment.png", "screenshots/transaction/vds_adjustment_show.png"], "keywords": ["VDS", "Adjustment", "Filter", "Search", "VAT"], "task_order": 1} -->
+<h4>Task: Filter VDS adjustments</h4>
+<p><strong>Purpose:</strong> To find specific VDS adjustment records based on branch, date range, and status.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Transaction &gt; Adjustment &gt; VDS Adjustment.</li>
+<li>Select the 'Select Branch' from the dropdown menu.</li>
+<li>Enter the date range using 'Enter From Date' and 'Enter To Date'.</li>
+<li>Select a status: 'Pending' or 'Complete'.</li>
+<li>Click the 'View' button to display the filtered records.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown to select the company branch.</li>
+<li><strong>Enter From Date:</strong> Start date for the filter.</li>
+<li><strong>Enter To Date:</strong> End date for the filter.</li>
+<li><strong>Pending:</strong> Radio button to filter records with pending status.</li>
+<li><strong>Complete:</strong> Radio button to filter records with completed status.</li>
+</ul>
+<p><strong>Expected result:</strong> A list of VDS adjustment records matching the specified criteria will appear in the table.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, Adjustment, Filter, Search, VAT</p>
+<h3>Page: VDS Certificate (Issue)</h3>
+<p><img src="screenshots/transaction/vds_certificate_issue.png" alt="Vds Certificate Issue: Screen" /></p>
+<p><img src="screenshots/transaction/vds_certificate_issue_show.png" alt="Vds Certificate Issue: Show" /></p>
+<p><strong>Page purpose:</strong> This page is used to view issued VAT Deduct at Source (VDS) certificates.</p>
+<p><strong>Route:</strong> <code>/transaction/treasuryAndOthers/varDeductatSource</code></p>
+<!-- manual-meta: {"module": "Transaction", "page": "VDS Certificate (Issue)", "task": "View VDS certificates", "action": "view", "roles": [], "route": "/transaction/treasuryAndOthers/varDeductatSource", "screenshots": ["screenshots/transaction/vds_certificate_issue.png", "screenshots/transaction/vds_certificate_issue_show.png"], "keywords": ["VDS", "Certificate", "Issue", "Deduct", "VAT"], "task_order": 1} -->
+<h4>Task: View VDS certificates</h4>
+<p><strong>Purpose:</strong> To view and track issued VDS certificates for a specific period.</p>
+<p><strong>Required roles:</strong></p>
+<ul>
+<li>No role restriction was identified</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Access to the Transaction module.</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Navigate to Transaction &gt; Treasury And Others &gt; VDS Certificate (Issue).</li>
+<li>Select the branch from 'Select Branch'.</li>
+<li>Specify the date range using 'Enter From Date' and 'Enter To Date'.</li>
+<li>Choose a status: 'All', 'Pending', or 'Complete'.</li>
+<li>Click the 'View' button.</li>
+</ol>
+<p><strong>Fields and controls:</strong></p>
+<ul>
+<li><strong>Select Branch:</strong> Dropdown for branch selection.</li>
+<li><strong>Enter From Date:</strong> Start date for the period.</li>
+<li><strong>Enter To Date:</strong> End date for the period.</li>
+<li><strong>All:</strong> Filter by all certificate statuses.</li>
+<li><strong>Pending:</strong> Filter by pending certificate status.</li>
+<li><strong>Complete:</strong> Filter by completed certificate status.</li>
+</ul>
+<p><strong>Expected result:</strong> A table showing details like Purchase Date, Supplier Name, Certificate No, Chalan No, and Deducted Amount will be generated.</p>
+<p><strong>Warnings:</strong></p>
+<ul>
+<li>No specific warning was identified</li>
+</ul>
+<p><strong>Search keywords:</strong> VDS, Certificate, Issue, Deduct, VAT</p>
+
+</body></html>

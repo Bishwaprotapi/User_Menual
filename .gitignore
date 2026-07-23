@@ -2,7 +2,7 @@
 __pycache__/
 *.pyc
 .idea/
-.claude/scheduled_tasks.lock
+.claude/
 
 # Playwright login sessions — real cookies, never commit
 auth_state.json

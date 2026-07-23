@@ -1,0 +1,78 @@
+HOW TO RUN THIS TOOL
+=====================
+
+ONE-TIME SETUP
+---------------
+pip install -r requirements.txt
+playwright install chromium
+
+Create a .env file in the project root with your Gemini key:
+GEMINI_API_KEY=your_key_here
+
+
+STEP-BY-STEP (recommended the first time, so you can check each stage)
+------------------------------------------------------------------------
+Replace <project> with a short name for the app (this becomes the root
+folder under projects/<project>/), and fill in the real login URL,
+username, password, and base URL of the app you want to document.
+
+1) Log in and save the session
+py src/auto_manual.py login --project <project> --login-url "https://app.example.com/login" --username "your_user" --password "your_pass"
+
+2) Discover every menu/submenu page from the sidebar
+py src/auto_manual.py discover --project <project> --base-url "https://app.example.com/dashboard"
+
+3) Crawl every page, take screenshots (cursor highlighted), open Create/Edit/Show
+py src/auto_manual.py crawl --project <project>
+
+4) Generate the per-menu Markdown + per-menu PDF, and the Overall manual
+py src/auto_manual.py sections --project <project> --software-name "App Name" --purpose "What it's for" --audience "Who uses it"
+
+5) Build the Overall PDF (cover page + table of contents + all pages)
+py src/auto_manual.py pdf --project <project>
+
+
+ONE COMMAND (does steps 1-5 automatically)
+--------------------------------------------
+py src/auto_manual.py all --project <project> --login-url "https://app.example.com/login" --username "your_user" --password "your_pass" --base-url "https://app.example.com/dashboard" --software-name "App Name" --purpose "What it's for" --audience "Who uses it"
+
+Add --force-regenerate to redo modules that were already generated.
+
+
+OPTIONAL: SEARCHABLE MANUAL (ask questions about the manual)
+----------------------------------------------------------------
+py src/auto_manual.py index --project <project>
+py src/auto_manual.py ask --project <project> "how do I create a new employee?"
+
+
+WHERE THE OUTPUT GOES
+-----------------------
+projects/<project>/
+  auth_state.json                          saved login session
+  discovery.json                           discovered menu/submenu map
+  ui_evidence.json                         raw scraped page data
+
+  screenshots/<menu>/                      screenshots for that menu (cursor + highlight ring on every shot)
+  screenshots/<menu>/manual_sections/       that menu's own Markdown (.md)
+  screenshots/<menu>/pdf_analysis/          that menu's own PDF
+
+  manual_sections/overall.md               combined Markdown for the whole app
+  pdf_analysis/overall.pdf                  combined PDF for the whole app (cover + TOC + everything)
+
+  debug/
+    execution.log                          what ran, in order
+    warnings.log                           warnings only
+    errors.log                             errors only
+    console.log                            browser console messages
+    exceptions.log                         full Python + browser error tracebacks
+    01_login_page.png ... 06_login_failed.png   login step screenshots, for troubleshooting
+
+
+NOTES
+------
+- The crawler never clicks Save, Submit, Delete, Approve, or other
+  state-changing buttons -- it only opens list/Create/Edit/Show views.
+- If login fails, check projects/<project>/debug/06_login_failed.png and
+  debug/errors.log first.
+- Re-running "sections" skips menus that already have a manual_sections/*.md
+  unless you pass --force-regenerate.

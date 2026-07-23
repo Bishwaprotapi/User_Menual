@@ -9,11 +9,16 @@ segment and writes discovery.json in the shape crawl_engine.py expects.
 import argparse
 import json
 import re
+import sys
 from collections import deque
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from playwright.sync_api import sync_playwright
+
+sys.path.insert(0, str(Path(__file__).parent))
+
+import debug_logger
 
 SKIP_RE = re.compile(r"logout|log-out|sign-?out|delete|remove|export|mailto:|tel:|javascript:", re.I)
 MAX_DEPTH = 2
@@ -29,6 +34,9 @@ def same_origin(url: str, origin: str) -> bool:
 
 
 def discover(base_url: str, project_dir: Path, seed_urls=None) -> dict:
+    logger = debug_logger.get_logger(project_dir)
+    logger.info(f"Discovery started: {base_url}")
+
     origin = f"{urlparse(base_url).scheme}://{urlparse(base_url).netloc}"
     seen_pages = {}  # href_path -> text
     queue = deque([(base_url, 0)])
@@ -40,6 +48,7 @@ def discover(base_url: str, project_dir: Path, seed_urls=None) -> dict:
         b = p.chromium.launch(headless=True)
         ctx = b.new_context(storage_state=str(project_dir / "auth_state.json"), viewport={"width": 1920, "height": 1000})
         pg = ctx.new_page()
+        debug_logger.attach_browser_logging(pg, project_dir)
 
         while queue and len(visited_pages) < MAX_PAGES:
             url, depth = queue.popleft()
@@ -52,6 +61,7 @@ def discover(base_url: str, project_dir: Path, seed_urls=None) -> dict:
                 pg.goto(url, timeout=20000)
             except Exception as e:
                 print(f"FAIL loading {url}: {e}")
+                debug_logger.log_exception(project_dir, e, context=f"discover {url}")
                 continue
             try:
                 pg.wait_for_load_state("networkidle", timeout=8000)
@@ -92,6 +102,7 @@ def discover(base_url: str, project_dir: Path, seed_urls=None) -> dict:
     discovery = {"base_url": origin, **modules}
     (project_dir / "discovery.json").write_text(json.dumps(discovery, indent=2), encoding="utf-8")
     print(f"Discovered {len(seen_pages)} pages across {len(modules)} modules -> {project_dir / 'discovery.json'}")
+    logger.info(f"Discovery finished: {len(seen_pages)} pages across {len(modules)} modules")
     return discovery
 
 

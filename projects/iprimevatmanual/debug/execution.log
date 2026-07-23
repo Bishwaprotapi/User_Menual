@@ -1,0 +1,26 @@
+2026-07-23 16:57:53,711 [INFO] Login started: https://devprimevat.ibos.io/
+2026-07-23 16:58:03,504 [INFO] Login OK, saved D:\User_Menual\projects\iprimevatmanual\auth_state.json
+2026-07-23 16:58:03,505 [INFO] Discovery started: https://devprimevat.ibos.io/
+2026-07-23 17:01:19,605 [INFO] Discovery finished: 97 pages across 6 modules
+2026-07-23 17:01:19,605 [INFO] Crawl started
+2026-07-23 17:01:20,274 [INFO] Crawling module: Client Integration (1 pages)
+2026-07-23 17:01:24,152 [INFO] Crawling module: Configuration (20 pages)
+2026-07-23 17:02:02,739 [INFO] Crawling module: Operation (19 pages)
+2026-07-23 17:03:05,719 [INFO] Crawling module: Reports (42 pages)
+2026-07-23 17:05:46,019 [INFO] Crawling module: Tax Accounting (5 pages)
+2026-07-23 17:06:00,361 [INFO] Crawling module: Transaction (10 pages)
+2026-07-23 17:06:29,294 [INFO] Crawl finished; wrote D:\User_Menual\projects\iprimevatmanual\ui_evidence.json
+2026-07-23 17:06:29,880 [INFO] Section generation started using gemini-3.1-flash-lite
+2026-07-23 17:06:36,767 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\client_integration\manual_sections\client_integration.md
+2026-07-23 17:06:38,329 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\client_integration\pdf_analysis\client_integration.pdf
+2026-07-23 17:07:11,033 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\configuration\manual_sections\configuration.md
+2026-07-23 17:07:13,476 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\configuration\pdf_analysis\configuration.pdf
+2026-07-23 17:07:45,226 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\operation\manual_sections\operation.md
+2026-07-23 17:07:47,973 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\operation\pdf_analysis\operation.pdf
+2026-07-23 17:09:07,776 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\reports\manual_sections\reports.md
+2026-07-23 17:09:12,996 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\reports\pdf_analysis\reports.pdf
+2026-07-23 17:09:22,400 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\tax_accounting\manual_sections\tax_accounting.md
+2026-07-23 17:09:24,501 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\tax_accounting\pdf_analysis\tax_accounting.pdf
+2026-07-23 17:09:43,688 [INFO] Wrote module section: D:\User_Menual\projects\iprimevatmanual\screenshots\transaction\manual_sections\transaction.md
+2026-07-23 17:09:45,760 [INFO] Wrote module PDF: D:\User_Menual\projects\iprimevatmanual\screenshots\transaction\pdf_analysis\transaction.pdf
+2026-07-23 17:09:45,762 [INFO] Wrote overall manual: D:\User_Menual\projects\iprimevatmanual\manual_sections\overall.md

@@ -581,7 +581,8 @@ def main() -> None:
     parser.add_argument(
         "--markdown",
         help=(
-            "Defaults to project manual.md"
+            "Defaults to project manual_sections/overall.md "
+            "(falls back to manual.md for older projects)"
         ),
     )
 
@@ -634,11 +635,12 @@ def main() -> None:
         args.project_dir
     ).resolve()
 
-    markdown_path = (
-        Path(args.markdown).resolve()
-        if args.markdown
-        else project_dir / "manual.md"
-    )
+    if args.markdown:
+        markdown_path = Path(args.markdown).resolve()
+    else:
+        markdown_path = project_dir / "manual_sections" / "overall.md"
+        if not markdown_path.is_file():
+            markdown_path = project_dir / "manual.md"  # older projects
 
     if not markdown_path.is_file():
         raise RuntimeError(
